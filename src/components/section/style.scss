@@ -1,0 +1,26 @@
+@use "../../assets/styles/colors.scss";
+@use "../../assets/styles/typography.scss";
+
+.section {
+  margin: 25px 0;
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    font-family: typography.$font-family;
+
+    .section-text {
+      font-size: typography.$font-size-small;
+      font-weight: typography.$font-weight-section-header;
+    }
+    .section-see-all-text {
+      text-decoration-line: underline;
+      text-decoration-color: colors.$gray;
+      font-size: typography.$font-size-extra-small;
+      font-weight: typography.$font-weight-section-see-all;
+      margin-top: 3px;
+    }
+    .section-icon {
+      background-color: none;
+    }
+  }
+}

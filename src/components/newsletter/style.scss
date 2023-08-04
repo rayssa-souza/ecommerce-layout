@@ -1,0 +1,46 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+@use "../../assets/styles/typography.scss";
+.newsletter {
+  font-family: typography.$font-family;
+  font-size: typography.$font-size-newsletter;
+  font-weight: typography.$font-weight-text;
+  .newsletter-form {
+    width: 351px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .newsletter-form-submit {
+      width: 100%;
+      padding-bottom: 7px;
+      border-bottom: 1.5px solid colors.$gray;
+      display: flex;
+      justify-content: space-between;
+
+      .newsletter-form-input,
+      .newsletter-email-validation {
+        width: 90%;
+        border: none;
+        font-family: typography.$font-family;
+      }
+      .newsletter-email-validation {
+        background-color: red;
+      }
+      .newsletter-form-button {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        font-size: typography.$font-size-small;
+      }
+    }
+    .newsletter-form-terms {
+      width: 82%;
+      padding: 7px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

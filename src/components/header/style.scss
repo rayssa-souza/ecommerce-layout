@@ -1,0 +1,47 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+
+@use "../../assets/styles/typography.scss";
+
+.header-container {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  .header-logo {
+    width: 74px;
+  }
+
+  .header-icons {
+    display: flex;
+    margin: auto 0;
+    color: colors.$black;
+    font-size: typography.$font-size-small;
+
+    .header-icons-shop {
+      svg {
+        margin: 0 5px;
+      }
+    }
+
+    .header-button-menu {
+      display: flex;
+      align-items: center;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      font-size: inherit;
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: breakpoints.$tablet) {
+  // coisas pro tablet
+}
+
+@media screen and (min-width: breakpoints.$desktop) {
+  // coisas pro desktop
+}

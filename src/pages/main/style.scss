@@ -1,0 +1,14 @@
+@use "../../assets/styles/typography.scss";
+
+.main {
+  .main-banner {
+    width: 100%;
+    height: 380px;
+  }
+
+  .main-paragraph {
+    word-break: break-word;
+    font-family: typography.$font-family;
+    font-weight: typography.$font-weight-text;
+  }
+}
