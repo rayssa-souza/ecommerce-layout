@@ -1,21 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
+// import { useState } from "react";
 import { BiSolidDownArrow } from "react-icons/bi";
 import "./style.scss";
 
 const HeaderMenuDesktop = ({ title, sublinks }) => {
-  const [isDropDownMenuOpen, setIsDropDownMenuOpen] = useState(false);
+  // const [isDropDownMenuOpen, setIsDropDownMenuOpen] = useState(false);
 
   const hasSubLinks = sublinks.length > 0;
 
-  const showDropDownMenu = () => {
-    setIsDropDownMenuOpen(!isDropDownMenuOpen);
-  };
-
   return (
     <li className="header-menu-list">
-      <h4 onClick={showDropDownMenu}>{title.text}</h4>
+      <h4>{title.text}</h4>
       {hasSubLinks ? (
         <div className="header-menu-arrow">
           <BiSolidDownArrow />
@@ -23,16 +19,16 @@ const HeaderMenuDesktop = ({ title, sublinks }) => {
       ) : (
         ""
       )}
-      {hasSubLinks && isDropDownMenuOpen && (
+      {hasSubLinks && (
         <div className="header-dropdown-menu">
           <ul>
-            <li>
-              {sublinks.map((sublinkItem) => (
+            {sublinks.map((sublinkItem) => (
+              <li>
                 <Link key={sublinkItem.id} to={sublinkItem.url}>
                   {sublinkItem.text}
                 </Link>
-              ))}
-            </li>
+              </li>
+            ))}
           </ul>
         </div>
       )}

@@ -1,4 +1,5 @@
 @use "../../assets/styles/breakpoints.scss";
+
 @use "../../assets/styles/colors.scss";
 
 @use "../../assets/styles/typography.scss";
@@ -21,7 +22,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      font-size: typography.$font-size-extra-small;
+      font-size: typography.$font-size-small-2;
 
       .header-actions-shop {
         width: 69px;
@@ -44,7 +45,7 @@
     background-color: colors.$gray;
     position: absolute;
     opacity: 0.5;
-    top: 32px;
+    top: 30px;
   }
 }
 
@@ -52,7 +53,7 @@
   .header {
     .header-menu-desktop {
       width: 60%;
-      padding: 15px;
+      padding: 10px 15px 0;
       > ul {
         display: flex;
         flex-direction: row;

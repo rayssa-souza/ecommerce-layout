@@ -4,7 +4,7 @@
 .newsletter {
   margin: 50px 0 20px;
   font-family: typography.$font-family;
-  font-size: typography.$font-size-newsletter;
+  font-size: typography.$font-size-small-2;
   font-weight: typography.$font-weight-text;
   .newsletter-form,
   .newsletterform-feedback {
@@ -35,7 +35,7 @@
         background-color: transparent;
         border: none;
         padding: 0;
-        font-size: typography.$font-size-small;
+        font-size: typography.$font-size-small-2;
       }
     }
     .newsletter-form-terms {
@@ -55,7 +55,7 @@
     margin-bottom: 20px;
     .newsletter-feedback-icon {
       margin: 0 10px;
-      font-size: typography.$font-size-extra-small;
+      font-size: typography.$font-size-small-2;
       color: colors.$green;
     }
   }

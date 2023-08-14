@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   font-family: typography.$font-family;
-  font-size: typography.$font-size-extra-small;
+  font-size: typography.$font-size-small-2;
   padding: 10px 0;
 
   border-bottom: 1px solid colors.$black;
@@ -22,7 +22,7 @@
     color: colors.$black;
   }
   .headerMenu-arrow {
-    font-size: typography.$font-size-small;
+    font-size: typography.$font-size-default;
     color: colors.$black;
   }
 }

@@ -3,7 +3,7 @@
 @use "../../assets/styles/breakpoints.scss";
 
 .footernav {
-  font-size: typography.$font-size-small;
+  font-size: typography.$font-size-default;
 
   &.sublinks {
     margin: 35px 0 20px;
