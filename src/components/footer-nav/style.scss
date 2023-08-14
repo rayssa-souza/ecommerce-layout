@@ -1,0 +1,39 @@
+@use "../../assets/styles/typography.scss";
+@use "../../assets/styles/colors.scss";
+@use "../../assets/styles/breakpoints.scss";
+
+.footernav {
+  font-size: typography.$font-size-small;
+
+  &.sublinks {
+    margin: 35px 0 20px;
+  }
+  a {
+    text-decoration: none;
+    color: colors.$black;
+    cursor: pointer;
+  }
+  .footernav-h4 {
+    font-weight: typography.$font-weight-text;
+    margin-bottom: 15px;
+
+    &.footernav-h4-sublinks {
+      margin-bottom: 17px;
+    }
+  }
+  .footernav-list-sublinks {
+    li {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: breakpoints.$desktop) {
+  .footernav {
+    margin: 0;
+
+    &.sublinks {
+      margin: 0;
+    }
+  }
+}

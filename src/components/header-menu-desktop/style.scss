@@ -1,0 +1,25 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+
+@use "../../assets/styles/typography.scss";
+.header-menu-list {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  font-family: typography.$font-family;
+  h4 {
+    font-weight: typography.$font-weight-text;
+    font-size: typography.$font-size-extra-small;
+  }
+
+  .header-menu-arrow {
+    margin-left: 5px;
+    font-size: 10px;
+  }
+  .header-dropdown-menu {
+    width: 250px;
+    background-color: colors.$white;
+    position: absolute;
+    top: 29px;
+  }
+}

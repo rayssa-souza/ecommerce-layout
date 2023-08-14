@@ -1,5 +1,11 @@
+@use "../../assets/styles/breakpoints.scss";
 .container {
   width: 100%;
   padding: 0 12px;
   margin: 0 auto;
+}
+@media screen and (min-width: breakpoints.$desktop) {
+  .container {
+    padding: 0 60px;
+  }
 }

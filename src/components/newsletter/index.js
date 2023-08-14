@@ -18,8 +18,6 @@ const NewsletterForm = ({ children }) => {
       return setIsEmailInvalid(true);
     }
 
-    console.log(isValid);
-
     if (check && isValid) {
       setSubmit(true);
       setTimeout(() => {
@@ -28,12 +26,15 @@ const NewsletterForm = ({ children }) => {
         setCheck(false);
       }, 3000);
     }
-    console.log(isValid);
   };
 
-  console.log(isEmailInvalid);
   const handleCheck = () => {
     setCheck(!check);
+  };
+
+  const handleOnChange = (e) => {
+    setIsEmailInvalid(false);
+    setEmail(e.target.value);
   };
 
   return (
@@ -48,10 +49,7 @@ const NewsletterForm = ({ children }) => {
               type="text"
               value={email}
               placeholder="Give an e-mail, get the newsletter."
-              onChange={(e) => {
-                setIsEmailInvalid(false);
-                setEmail(e.target.value);
-              }}
+              onChange={handleOnChange}
             />
 
             <button
@@ -79,10 +77,10 @@ const NewsletterForm = ({ children }) => {
 
       {submit && (
         <div className="newsletterform-feedback">
-          <p>
+          <div className="newsletter-feedback-icon">
             <AiOutlineCheck />
-            Thanks! Soon we'll be sending it to you!
-          </p>
+          </div>
+          <p> Thanks! Soon we'll be sending it to you!</p>
         </div>
       )}
 

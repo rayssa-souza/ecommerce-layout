@@ -1,0 +1,28 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+
+@use "../../assets/styles/typography.scss";
+
+.headerMenu-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-family: typography.$font-family;
+  font-size: typography.$font-size-extra-small;
+  padding: 10px 0;
+
+  border-bottom: 1px solid colors.$black;
+
+  &:first-of-type {
+    border-top: 1px solid colors.$black;
+  }
+
+  a {
+    text-decoration: none;
+    color: colors.$black;
+  }
+  .headerMenu-arrow {
+    font-size: typography.$font-size-small;
+    color: colors.$black;
+  }
+}

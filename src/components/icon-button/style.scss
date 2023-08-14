@@ -1,0 +1,19 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+
+@use "../../assets/styles/typography.scss";
+
+.button-icon {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+
+  color: colors.$black;
+  font-size: typography.$font-size-small;
+}
+
+@media screen and (min-width: breakpoints.$desktop) {
+  .button-icon {
+    font-size: typography.$font-size-medium;
+  }
+}

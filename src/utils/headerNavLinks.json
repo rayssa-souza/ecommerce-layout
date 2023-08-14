@@ -1,0 +1,29 @@
+{
+  "links": [
+    {
+      "title": { "text": "SKINCARE", "url": "/products/skincare" },
+      "sublinks": [
+        { "text": "Cleasing Oil", "url": "/fake", "id": "1ghi" },
+        { "text": "Sérum", "url": "/fake", "id": "2ghi" },
+        { "text": "Facial Mask", "url": "/fake", "id": "3ghi" },
+        { "text": "Moisturizing", "url": "/fake", "id": "4ghi" }
+      ],
+      "id": "1def"
+    },
+    {
+      "title": { "text": "HAIR AND BODY", "url": "/products/hair-and-body" },
+      "sublinks": [],
+      "id": "2def"
+    },
+    {
+      "title": { "text": "BEST SELLERS", "url": " /products/hair-and-body" },
+      "sublinks": [],
+      "id": "3def"
+    },
+    {
+      "title": { "text": "MAKE UP", "url": " /fake" },
+      "sublinks": [],
+      "id": "4def"
+    }
+  ]
+}

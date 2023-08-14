@@ -1,0 +1,33 @@
+{
+  "links": [
+    {
+      "title": { "text": "MAIN PAGE", "url": "/" },
+      "sublinks": [],
+      "id": "1abc"
+    },
+    {
+      "title": { "text": "ABOUT US", "url": "/fake" },
+      "sublinks": [],
+      "id": "2abc"
+    },
+
+    {
+      "title": { "text": "CATALOG", "url": null },
+      "sublinks": [
+        { "text": "Skincare", "url": "/products/skincare", "id": 1 },
+        { "text": "Hair & body", "url": "/products/hair-and-body", "id": 2 },
+        { "text": "Best Sellers", "url": "/products/best-sellers", "id": 3 }
+      ],
+      "id": "3abc"
+    },
+    {
+      "title": { "text": "CUSTOMER CARE", "url": null },
+      "sublinks": [
+        { "text": "FAQ", "url": "/products/skincare", "id": 1 },
+        { "text": "Disposal Instructions", "url": "/fake", "id": 2 },
+        { "text": "Return Policy", "url": "/fake", "id": 3 }
+      ],
+      "id": "4abc"
+    }
+  ]
+}

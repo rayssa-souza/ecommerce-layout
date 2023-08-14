@@ -2,12 +2,14 @@
 @use "../../assets/styles/colors.scss";
 @use "../../assets/styles/typography.scss";
 .newsletter {
+  margin: 50px 0 20px;
   font-family: typography.$font-family;
   font-size: typography.$font-size-newsletter;
   font-weight: typography.$font-weight-text;
-  .newsletter-form {
+  .newsletter-form,
+  .newsletterform-feedback {
     width: 351px;
-    margin-top: 20px;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,7 +28,8 @@
         font-family: typography.$font-family;
       }
       .newsletter-email-validation {
-        background-color: red;
+        border: 2px solid colors.$red;
+        border-radius: 5px;
       }
       .newsletter-form-button {
         background-color: transparent;
@@ -42,5 +45,23 @@
       justify-content: space-between;
       align-items: center;
     }
+  }
+  .newsletterform-feedback {
+    height: 61px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-bottom: 20px;
+    .newsletter-feedback-icon {
+      margin: 0 10px;
+      font-size: typography.$font-size-extra-small;
+      color: colors.$green;
+    }
+  }
+}
+@media screen and (min-width: breakpoints.$desktop) {
+  .newsletter {
+    margin: 16px 0 0 0;
   }
 }

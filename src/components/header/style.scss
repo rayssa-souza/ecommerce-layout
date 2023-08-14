@@ -3,45 +3,69 @@
 
 @use "../../assets/styles/typography.scss";
 
-.header-container {
-  width: 100%;
-  padding: 0 10px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+.header {
+  position: relative;
+  .top-header {
+    width: 100%;
 
-  .header-logo {
-    width: 74px;
-  }
-
-  .header-icons {
     display: flex;
-    margin: auto 0;
-    color: colors.$black;
-    font-size: typography.$font-size-small;
+    justify-content: space-between;
 
-    .header-icons-shop {
-      svg {
-        margin: 0 5px;
+    .header-logo {
+      width: 74px;
+    }
+
+    .header-action-buttons,
+    .header-actions-shop {
+      width: 116px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: typography.$font-size-extra-small;
+
+      .header-actions-shop {
+        width: 69px;
       }
     }
-
-    .header-button-menu {
-      display: flex;
-      align-items: center;
-      background-color: transparent;
-      border: none;
-      padding: 0;
-      font-size: inherit;
-      margin-left: 15px;
-    }
   }
-}
+  .header-menu-mobile {
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    top: 32px;
 
-@media screen and (min-width: breakpoints.$tablet) {
-  // coisas pro tablet
+    background-color: white;
+    z-index: 1;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100vh;
+    background-color: colors.$gray;
+    position: absolute;
+    opacity: 0.5;
+    top: 32px;
+  }
 }
 
 @media screen and (min-width: breakpoints.$desktop) {
-  // coisas pro desktop
+  .header {
+    .header-menu-desktop {
+      width: 60%;
+      padding: 15px;
+      > ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    .top-header {
+      .header-action-buttons,
+      .header-actions-shop {
+        .header-actions-shop {
+          width: 80px;
+        }
+      }
+    }
+  }
 }

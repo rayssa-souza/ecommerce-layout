@@ -8,6 +8,7 @@ Live Demo: comming soon
 - React Router
 - React Icons
 - SaSS
+- Clsx
 - Netlify
 
 # How to Install and Run:
