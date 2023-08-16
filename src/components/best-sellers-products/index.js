@@ -3,6 +3,7 @@ import "./style.scss";
 import GridContainer from "../grid-container";
 import GridItem from "../grid-item";
 import products from "../../utils/products.json";
+import { Link } from "react-router-dom";
 
 const BestSellersProducts = ({ children }) => {
   return (
@@ -18,16 +19,22 @@ const BestSellersProducts = ({ children }) => {
               key={productItem.id}
             >
               <div className="best-sellers-products-img">
-                <img
-                  alt="product-img"
-                  src={
-                    process.env.PUBLIC_URL +
-                    "/images/ordinary-imgs/" +
-                    productItem.url
-                  }
-                />
+                <Link to="/" title={productItem.title}>
+                  <img
+                    alt="product-img"
+                    src={
+                      process.env.PUBLIC_URL +
+                      "/images/ordinary-imgs/" +
+                      productItem.url
+                    }
+                  />
+                </Link>
                 <div className="best-sellers-products-text">
-                  <span>{productItem.title}</span>
+                  <span>
+                    <Link to="/" title={productItem.title}>
+                      {productItem.title}
+                    </Link>
+                  </span>
                   <span className="best-sellers-price">
                     $ {productItem.price}
                   </span>

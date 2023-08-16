@@ -8,7 +8,7 @@
   position: relative;
 
   margin-bottom: 20px;
-  .top-header {
+  .topheader {
     width: 100%;
 
     display: flex;
@@ -16,6 +16,9 @@
     border-bottom: 1px solid colors.$gray;
     .header-logo {
       cursor: pointer;
+    }
+    &.noBorder {
+      border: none;
     }
 
     .header-action-buttons,
@@ -47,7 +50,7 @@
     background-color: colors.$gray;
     position: absolute;
     opacity: 0.5;
-    top: 30px;
+    top: 32px;
   }
 }
 
@@ -62,7 +65,7 @@
         justify-content: space-between;
       }
     }
-    .top-header {
+    .topheader {
       .header-action-buttons,
       .header-actions-shop {
         .header-actions-shop {

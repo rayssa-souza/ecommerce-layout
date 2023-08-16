@@ -5,6 +5,7 @@
 .best-sellers-products {
   font-family: typography.$font-family;
   font-size: typography.$font-size-small-2;
+  color: colors.$black;
 
   .best-sellers-products-img {
     img {
@@ -20,6 +21,10 @@
         display: block;
         min-height: 30px;
         margin: 5px 0;
+        a {
+          text-decoration: none;
+          color: colors.$black;
+        }
       }
       .best-sellers-price {
         font-weight: typography.$font-weight-text;

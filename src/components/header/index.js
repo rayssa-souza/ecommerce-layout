@@ -16,6 +16,7 @@ import headerNavLinks from "../../utils/headerNavLinks.json";
 import IconButton from "../icon-button";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import clsx from "clsx";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
 const Header = () => {
@@ -31,7 +32,7 @@ const Header = () => {
   return (
     <header className="header">
       <Container>
-        <div className="top-header">
+        <div className={clsx({ topheader: true, noBorder: isMenuOpen })}>
           <Link to="/" title="Ordinary">
             <img
               className="header-logo"
