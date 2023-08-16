@@ -7,7 +7,7 @@ import {
   AiOutlineMenu,
   AiOutlineClose,
 } from "react-icons/ai";
-import isMobile from "../../utils/isMobile";
+
 import toggleBody from "../../utils/toggleBody";
 import Container from "../container";
 import HeaderMenuMobile from "../header-menu-mobile";
@@ -15,10 +15,12 @@ import HeaderMenuDesktop from "../header-menu-desktop";
 import headerNavLinks from "../../utils/headerNavLinks.json";
 import IconButton from "../icon-button";
 import { useState } from "react";
-import isDesktop from "../../utils/isDesktop";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isMobile, isDesktop, isTablet } = useMediaQuery();
+  console.log({ isDesktop, isMobile });
 
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -35,7 +37,7 @@ const Header = () => {
             src="https://place-hold.it/148x64"
             alt="img-logo"
           />
-          {isDesktop() && (
+          {isDesktop && (
             <nav className="header-menu-desktop">
               <ul>
                 {headerNavLinks.links.map((navItem) => (
@@ -55,7 +57,7 @@ const Header = () => {
               <IconButton icon={<AiFillHeart />} />
               <IconButton icon={<AiFillShopping />} />
             </div>
-            {isMobile() && (
+            {(isMobile || isTablet) && (
               <IconButton
                 icon={isMenuOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
                 onClick={handleMenu}
@@ -64,7 +66,7 @@ const Header = () => {
           </div>
         </div>
       </Container>
-      {isMenuOpen && isMobile() && (
+      {isMenuOpen && (isMobile || isTablet) && (
         <>
           <nav className="header-menu-mobile">
             <ul>

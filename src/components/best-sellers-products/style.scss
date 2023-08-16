@@ -1,0 +1,33 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+@use "../../assets/styles/typography.scss";
+
+.best-sellers-products {
+  font-family: typography.$font-family;
+  font-size: typography.$font-size-small-2;
+
+  .best-sellers-products-img {
+    img {
+      width: 100%;
+    }
+
+    .best-sellers-products-text {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin: 5px 0;
+      }
+      .best-sellers-price {
+        font-weight: typography.$font-weight-text;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: breakpoints.$desktop) {
+  .best-sellers-products {
+    font-size: typography.$font-size-small-1;
+  }
+}

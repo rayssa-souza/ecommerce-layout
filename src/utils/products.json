@@ -1,0 +1,81 @@
+{
+  "popular_products": [
+    {
+      "title": "Latic Acid 10%",
+      "category": "skincare",
+      "subcategory": "serum",
+      "url": "https://place-hold.it/185X222",
+      "price": 8.92,
+      "id": "1ijk"
+    },
+    {
+      "title": "AHA 30% + BHA 10%",
+      "category": "skincare",
+      "subcategory": "serum",
+      "url": "https://place-hold.it/185X222",
+      "price": 8.55,
+      "id": "2ijk"
+    },
+    {
+      "title": "Hyaluronic Acid 5% ",
+      "category": "skincare",
+      "subcategory": "moisturizing",
+      "url": "https://place-hold.it/185X222",
+      "price": 7.99,
+      "id": "3ijk"
+    }
+  ],
+  "best_sellers": [
+    {
+      "title": "Sulfate 4% Shampoo",
+      "category": "hair",
+      "subcategory": "shampoo",
+
+      "url": "https://place-hold.it/185X222",
+      "price": 8.12,
+      "id": "4ijk"
+    },
+    {
+      "title": "Salicylic acid 2% Cleansing Oil",
+      "category": "skincare",
+      "subcategory": "cleansing oil",
+
+      "url": "https://place-hold.it/185X222",
+      "price": 8.55,
+      "id": "5ijk"
+    },
+    {
+      "title": "Multi-Peptide + HA Serum",
+      "category": "skincare",
+      "subcategory": "serum",
+      "url": "https://place-hold.it/185X222",
+      "price": 17.5,
+      "id": "6ijk"
+    },
+    {
+      "title": "Alpha Arbutin 2% + HA",
+      "category": "skincare",
+      "subcategory": "serum",
+      "url": "https://place-hold.it/185X222",
+      "price": 19.5,
+      "id": "7ijk"
+    },
+    {
+      "title": "Multi-Peptide Brown and Lash Serum",
+      "category": "skincare",
+      "subcategory": "serum",
+      "url": "https://place-hold.it/185X222",
+      "price": 14.5,
+      "id": "8ijk"
+    },
+    {
+      "title": "Salicylic acid 2% Mask",
+      "category": "facial mask",
+      "subcategory": null,
+
+      "url": "https://place-hold.it/185X222",
+      "price": 19.5,
+      "id": "9ijk"
+    }
+  ]
+}

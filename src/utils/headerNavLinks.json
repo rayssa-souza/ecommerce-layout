@@ -16,12 +16,12 @@
       "id": "2def"
     },
     {
-      "title": { "text": "BEST SELLERS", "url": " /products/hair-and-body" },
+      "title": { "text": "BEST SELLERS", "url": "/products/best-sellers" },
       "sublinks": [],
       "id": "3def"
     },
     {
-      "title": { "text": "MAKE UP", "url": " /fake" },
+      "title": { "text": "POPULAR", "url": "/products/popular" },
       "sublinks": [],
       "id": "4def"
     }

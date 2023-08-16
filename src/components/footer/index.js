@@ -1,5 +1,5 @@
 import React from "react";
-import isDesktop from "../../utils/isDesktop";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 import { BsInstagram, BsTwitter, BsTelegram } from "react-icons/bs";
 import NewsletterForm from "../newsletter";
@@ -8,6 +8,7 @@ import footerNavLinks from "../../utils/footerNavLinks.json";
 import FooterNav from "../footer-nav";
 
 const Footer = ({ children }) => {
+  const { isDesktop } = useMediaQuery();
   return (
     <div className="footer">
       <div className="footer-bar">
@@ -18,7 +19,7 @@ const Footer = ({ children }) => {
         />
       </div>
       <div className="footer-wrapper-nav-newsletter">
-        {isDesktop() ? (
+        {isDesktop ? (
           <nav>
             <ul>
               <div>
