@@ -10,6 +10,7 @@
 
   color: colors.$black;
   font-size: typography.$font-size-default;
+  cursor: pointer;
 }
 
 @media screen and (min-width: breakpoints.$desktop) {

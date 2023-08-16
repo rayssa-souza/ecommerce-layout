@@ -18,7 +18,14 @@ const BestSellersProducts = ({ children }) => {
               key={productItem.id}
             >
               <div className="best-sellers-products-img">
-                <img alt="product-img" src={productItem.url} />
+                <img
+                  alt="product-img"
+                  src={
+                    process.env.PUBLIC_URL +
+                    "/images/ordinary-imgs/" +
+                    productItem.url
+                  }
+                />
                 <div className="best-sellers-products-text">
                   <span>{productItem.title}</span>
                   <span className="best-sellers-price">

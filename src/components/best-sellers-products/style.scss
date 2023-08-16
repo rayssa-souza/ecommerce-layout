@@ -17,6 +17,8 @@
       flex-direction: column;
 
       span {
+        display: block;
+        min-height: 30px;
         margin: 5px 0;
       }
       .best-sellers-price {

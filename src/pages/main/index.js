@@ -14,7 +14,9 @@ const Main = () => {
       <Container>
         <img
           className="main-banner"
-          src="https://place-hold.it/1264x642"
+          src={
+            process.env.PUBLIC_URL + "/images/ordinary-imgs/ordinary-banner.png"
+          }
           alt="img-banner"
         />
         <Section text={"BEST SELLERS"} />

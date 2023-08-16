@@ -15,12 +15,12 @@ import HeaderMenuDesktop from "../header-menu-desktop";
 import headerNavLinks from "../../utils/headerNavLinks.json";
 import IconButton from "../icon-button";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isMobile, isDesktop, isTablet } = useMediaQuery();
-  console.log({ isDesktop, isMobile });
 
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -32,11 +32,13 @@ const Header = () => {
     <header className="header">
       <Container>
         <div className="top-header">
-          <img
-            className="header-logo"
-            src="https://place-hold.it/148x64"
-            alt="img-logo"
-          />
+          <Link to="/" title="Ordinary">
+            <img
+              className="header-logo"
+              src={process.env.PUBLIC_URL + "/images/ordinary-imgs/logo.png"}
+              alt="img-logo"
+            />
+          </Link>
           {isDesktop && (
             <nav className="header-menu-desktop">
               <ul>

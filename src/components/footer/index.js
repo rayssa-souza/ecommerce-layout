@@ -14,7 +14,7 @@ const Footer = ({ children }) => {
       <div className="footer-bar">
         <img
           className="footer-logo"
-          src="https://place-hold.it/85x34"
+          src={process.env.PUBLIC_URL + "/images/ordinary-imgs/logo.png"}
           alt="footer-logo"
         />
       </div>
