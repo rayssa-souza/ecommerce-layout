@@ -20,14 +20,7 @@ const BestSellersProducts = ({ children }) => {
             >
               <div className="best-sellers-products-img">
                 <Link to="/" title={productItem.title}>
-                  <img
-                    alt="product-img"
-                    src={
-                      process.env.PUBLIC_URL +
-                      "/images/ordinary-imgs/" +
-                      productItem.url
-                    }
-                  />
+                  <img alt="product-img" src={productItem.url} />
                 </Link>
                 <div className="best-sellers-products-text">
                   <span>

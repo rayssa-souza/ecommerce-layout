@@ -4,43 +4,43 @@
       "title": "Latic Acid 10%",
       "category": "skincare",
       "subcategory": "serum",
-      "url": "popular-1.png",
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwa98551aa/Images/products/The%20Ordinary/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?sw=440&sh=440&sm=fit",
       "price": 8.92,
       "id": "1ijk"
     },
     {
-      "title": "AHA 30% + BHA 10%",
+      "title": "AHA 30% + BHA",
       "category": "skincare",
       "subcategory": "serum",
-      "url": "popular-2.png",
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw9ef29ca7/Images/products/The%20Ordinary/rdn-argireline-solution-10pct-30ml.png?sw=440&sh=440&sm=fit",
       "price": 8.55,
       "id": "2ijk"
     },
     {
-      "title": "Sulfate 4% Shampoo",
-      "category": "hair",
-      "subcategory": "shampoo",
-      "url": "popular-3.png",
-      "price": 7.99,
-      "id": "3ijk"
+      "title": "Skincare Kit",
+      "category": "skincare",
+      "subcategory": "kit",
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwf6fd5e39/Images/products/deciem/dbs-the-future-set-eu.png?sw=320&sh=320&sm=fit",
+      "price": 19.5,
+      "id": "7ijk"
     }
   ],
   "best_sellers": [
     {
-      "title": "Hyaluronic Acid 5%",
+      "title": "Hyaluronic Acid 2.5%",
       "category": "skincare",
       "subcategory": "moisturizing",
 
-      "url": "best-seller-1.png",
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7acbb761/Images/products/The%20Ordinary/rdn-multi-peptide-eye-serum-15ml.png?sw=320&sh=320&sm=fit",
       "price": 8.12,
       "id": "4ijk"
     },
     {
-      "title": "Salicylic acid 2% Cleansing Oil",
+      "title": "Salicylic acid 1% Cleansing Oil",
       "category": "skincare",
       "subcategory": "cleansing oil",
 
-      "url": "best-seller-2.png",
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7046e6c2/Images/products/The%20Ordinary/rdn-mineral-uv-filters-spf-15-with-antioxidants-50ml.png?sw=1200&sh=1200&sm=fit",
       "price": 8.55,
       "id": "5ijk"
     },
@@ -48,32 +48,33 @@
       "title": "Multi-Peptide + HA Serum",
       "category": "skincare",
       "subcategory": "serum",
-      "url": "best-seller-1.png",
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw9ef29ca7/Images/products/The%20Ordinary/rdn-argireline-solution-10pct-30ml.png?sw=440&sh=440&sm=fit",
       "price": 17.5,
       "id": "6ijk"
     },
     {
-      "title": "Alpha Arbutin 2% + HA",
-      "category": "skincare",
-      "subcategory": "serum",
-      "url": "best-seller-2.png",
-      "price": 19.5,
-      "id": "7ijk"
+      "title": "Sulfate 0.5% Shampoo",
+      "category": "hair",
+      "subcategory": "shampoo",
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7e4d4285/Images/products/The%20Ordinary/rdn-behentrimonium-chloride-2pct-conditioner-240ml.png?sw=220&sh=220&sm=fit",
+      "price": 7.99,
+      "id": "3ijk"
     },
+
     {
       "title": "Multi-Peptide Brown and Lash Serum",
       "category": "skincare",
       "subcategory": "serum",
-      "url": "best-seller-1.png",
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw072fb36c/Images/products/The%20Ordinary/rdn-multi-peptide-lash-and-brow-serum-eu-5ml.png?sw=1200&sh=1200&sm=fit",
       "price": 14.5,
       "id": "8ijk"
     },
     {
-      "title": "Salicylic acid 2% Mask",
-      "category": "facial mask",
-      "subcategory": null,
+      "title": "Glycolic Acid 9% Toning Solution",
+      "category": "skincare",
+      "subcategory": "toners",
 
-      "url": "best-seller-2.png",
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwc9a72f9b/Images/products/The%20Ordinary/rdn-glycolic-acid-7pct-toning-solution-240ml.png?sw=800&sh=800&sm=fit",
       "price": 19.5,
       "id": "9ijk"
     }
