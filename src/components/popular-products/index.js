@@ -4,6 +4,7 @@ import products from "../../utils/products.json";
 import GridItem from "../grid-item";
 import GridContainer from "../grid-container";
 import { Link } from "react-router-dom";
+import FavoriteProductButton from "../favorite-product-button";
 
 const PopularProducts = ({ children }) => {
   return (
@@ -23,14 +24,15 @@ const PopularProducts = ({ children }) => {
                   <img alt="product-img" src={productItem.url} />
                 </Link>
                 <div className="popular-products-text">
-                  <span>
-                    <Link to="/" title={productItem.title}>
-                      {productItem.title}
-                    </Link>
-                  </span>
-                  <span className="popular-price">
-                    {`$ ${productItem.price}`}
-                  </span>
+                  <div className="popular-title-wrapper">
+                    <h2>
+                      <Link to="/" title={productItem.title}>
+                        {productItem.title}
+                      </Link>
+                    </h2>
+                    <FavoriteProductButton />
+                  </div>
+                  <h3 className="popular-price">{`$ ${productItem.price}`}</h3>
                 </div>
               </div>
             </GridItem>

@@ -7,12 +7,19 @@
   background-color: transparent;
   border: none;
   padding: 0;
-
-  color: colors.$black;
   font-size: typography.$font-size-default;
   cursor: pointer;
 }
 
+.button-color-red {
+  color: colors.$red;
+}
+.button-color-black {
+  color: colors.$black;
+}
+.button-color-gray {
+  color: colors.$gray;
+}
 @media screen and (min-width: breakpoints.$desktop) {
   .button-icon {
     font-size: typography.$font-size-medium;
