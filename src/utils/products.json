@@ -77,6 +77,15 @@
       "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwc9a72f9b/Images/products/The%20Ordinary/rdn-glycolic-acid-7pct-toning-solution-240ml.png?sw=800&sh=800&sm=fit",
       "price": 19.5,
       "id": "9ijk"
+    },
+    {
+      "title": "Moisturizing",
+      "category": "skincare",
+      "subcategory": "moisturizing",
+
+      "url": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwb45bec24/Images/products/The%20Ordinary/rdn-hair-care-natural-moisturizing-factors-ha-60ml.png?sw=1200&sh=1200&sm=fit",
+      "price": 29.5,
+      "id": "10ijk"
     }
   ]
 }

@@ -66,10 +66,10 @@
       }
     }
     .topheader {
-      .header-action-buttons,
-      .header-actions-shop {
+      .header-action-buttons {
+        width: 80px;
         .header-actions-shop {
-          width: 80px;
+          width: 100%;
         }
       }
     }
