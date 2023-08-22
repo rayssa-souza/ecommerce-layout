@@ -1,8 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
+import Catalogue from "../pages/catalogue";
 
 const Main = lazy(() => import("../pages/main"));
-const Catalog = lazy(() => import("../pages/catalog"));
+const Catalog = lazy(() => import("../pages/catalogue"));
 const Product = lazy(() => import("../pages/product"));
 
 console.log({
@@ -16,8 +17,8 @@ const AppRoutes = () => {
       <Suspense fallback={<div />}>
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="/products/:category" element={<Catalog />} />
-          <Route path="/product/:product" element={<Product />} />
+          <Route path="/products/:category" element={<Catalogue />} />
+          <Route path="/product/:category/:product" element={<Product />} />
         </Routes>
       </Suspense>
     </div>

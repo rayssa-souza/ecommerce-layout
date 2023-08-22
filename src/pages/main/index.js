@@ -7,6 +7,8 @@ import Footer from "../../components/footer";
 import BestSellersProducts from "../../components/best-sellers-products";
 import PopularProducts from "../../components/popular-products";
 import Sliders from "../../components/slider-carrousel";
+// import { useParams } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Main = () => {
   return (

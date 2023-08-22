@@ -16,6 +16,7 @@
   &:hover {
     .header-dropdown-menu {
       display: block;
+      z-index: 1;
     }
   }
 
