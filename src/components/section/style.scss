@@ -13,15 +13,12 @@
       font-weight: typography.$font-weight-section-header;
     }
     .section-see-all-text {
+      font-size: typography.$font-size-small-2;
+      color: colors.$black;
+      font-weight: typography.$font-weight-text;
       text-decoration-line: underline;
       text-decoration-color: colors.$gray;
-      font-size: typography.$font-size-small-2;
-      font-weight: typography.$font-weight-text;
       margin-top: 3px;
-      cursor: pointer;
-    }
-    .section-icon {
-      background-color: none;
     }
   }
 }

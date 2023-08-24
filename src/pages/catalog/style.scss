@@ -1,0 +1,39 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+@use "../../assets/styles/typography.scss";
+
+.catalogue {
+  .catalogue-products-img {
+    img {
+      width: 100%;
+      background-color: colors.$background-image;
+    }
+
+    .catalogue-products-text {
+      font-family: typography.$font-family;
+      font-size: typography.$font-size-small-2;
+      color: colors.$black;
+      .catalogue-title-wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+      margin-top: 15px;
+      a {
+        text-decoration: none;
+        color: colors.$black;
+      }
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      h2,
+      h3 {
+        display: block;
+        // min-height: 38px;
+        padding: 5px 0;
+      }
+      .catalogue-price {
+        font-weight: typography.$font-weight-text;
+      }
+    }
+  }
+}

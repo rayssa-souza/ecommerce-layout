@@ -81,7 +81,7 @@ const PopularProducts = ({ children }) => {
         >
           {products.popular_products.map((productItem, index) => {
             return (
-              <div className="popular-products-img">
+              <div className="popular-products-img" key={productItem.id}>
                 <Link to="/" title={productItem.title}>
                   <img alt="product-img" src={productItem.url} />
                 </Link>

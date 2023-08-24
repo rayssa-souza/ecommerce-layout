@@ -8,7 +8,9 @@ const HeaderMenuDesktop = ({ title, sublinks }) => {
 
   return (
     <li className="header-menu-list">
-      <h4>{title.text}</h4>
+      <Link to={title.url} title={title.text}>
+        <h4>{title.text}</h4>
+      </Link>
       {hasSubLinks ? (
         <div className="header-menu-arrow">
           <BiSolidDownArrow />

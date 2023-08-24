@@ -14,20 +14,24 @@ import HeaderMenuMobile from "../header-menu-mobile";
 import HeaderMenuDesktop from "../header-menu-desktop";
 import headerNavLinks from "../../utils/headerNavLinks.json";
 import IconButton from "../icon-button";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import clsx from "clsx";
 import useMediaQuery from "../../hooks/useMediaQuery";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { pathname } = useLocation();
   const { isMobile, isDesktop, isTablet } = useMediaQuery();
 
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-
     toggleBody();
   };
+
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
 
   return (
     <header className="header">

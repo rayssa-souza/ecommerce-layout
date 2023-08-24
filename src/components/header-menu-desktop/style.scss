@@ -9,9 +9,13 @@
   padding-bottom: 10px;
   font-family: typography.$font-family;
   cursor: pointer;
-  h4 {
-    font-weight: typography.$font-weight-text;
-    font-size: typography.$font-size-small-1;
+  a {
+    color: colors.$black;
+    text-decoration: none;
+    h4 {
+      font-weight: typography.$font-weight-text;
+      font-size: typography.$font-size-small-1;
+    }
   }
   &:hover {
     .header-dropdown-menu {
@@ -28,7 +32,7 @@
     display: none;
     background-color: colors.$white;
     position: absolute;
-    top: 24px;
+    top: 20px;
 
     box-shadow: 7px 19px 25px colors.$shadow;
 

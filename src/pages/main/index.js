@@ -7,10 +7,12 @@ import Footer from "../../components/footer";
 import BestSellersProducts from "../../components/best-sellers-products";
 import PopularProducts from "../../components/popular-products";
 import Sliders from "../../components/slider-carrousel";
-// import { useParams } from "react-router-dom";
-// import { useNavigate } from "react-router-dom";
+import catalog from "../../utils/catalog.json";
+import { Navigate } from "react-router-dom";
 
 const Main = () => {
+  const bestSellersProducts = catalog["best-sellers"];
+  const popularProducts = catalog["popular"];
   return (
     <div className="main">
       <Header />
@@ -51,14 +53,17 @@ const Main = () => {
             alt="img-banner"
           />
         </Sliders>
-        <Section text={"BEST SELLERS"} />
+        <Section
+          text={"BEST SELLERS"}
+          link={`/shop/${bestSellersProducts.id}`}
+        />
         <p className="main-paragraph">
           All of our products are created with love and care for your skin to
           help you achieve healthy and beautiful skin.
         </p>
         <BestSellersProducts />
-        {/* <CatlogNavLinks /> */}
-        <Section text={"POPULAR"} />
+
+        <Section text={"POPULAR"} link={`/shop/${popularProducts.id}`} />
 
         <PopularProducts />
         <Footer />

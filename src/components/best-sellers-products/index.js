@@ -44,7 +44,7 @@ const BestSellersProducts = ({ children }) => {
       >
         {products.best_sellers.map((productItem) => {
           return (
-            <div className="best-sellers-products-img">
+            <div className="best-sellers-products-img" key={productItem.id}>
               <Link to="/" title={productItem.title}>
                 <img alt="product-img" src={productItem.url} />
               </Link>

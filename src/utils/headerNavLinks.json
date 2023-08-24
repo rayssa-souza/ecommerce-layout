@@ -1,27 +1,35 @@
 {
   "links": [
     {
-      "title": { "text": "SKINCARE", "url": "/products/skincare" },
+      "title": { "text": "SKINCARE", "url": "/shop/skin-care" },
       "sublinks": [
-        { "text": "Cleasing Oil", "url": "/fake", "id": "1ghi" },
-        { "text": "Sérum", "url": "/fake", "id": "2ghi" },
-        { "text": "Facial Mask", "url": "/fake", "id": "3ghi" },
-        { "text": "Moisturizing", "url": "/fake", "id": "4ghi" }
+        {
+          "text": "Cleaser",
+          "url": "/shop/skin-care/cleanser",
+          "id": "1ghi"
+        },
+        { "text": "Serum", "url": "/shop/skin-care/serum", "id": "2ghi" },
+        { "text": "Toner", "url": "/shop/skin-care/toner", "id": "3ghi" },
+        {
+          "text": "Moisturizing",
+          "url": "/shop/skin-care/moisturizing",
+          "id": "4ghi"
+        }
       ],
       "id": "1def"
     },
     {
-      "title": { "text": "HAIR AND BODY", "url": "/products/hair-and-body" },
+      "title": { "text": "HAIR AND BODY", "url": "/shop/hair-and-body" },
       "sublinks": [],
       "id": "2def"
     },
     {
-      "title": { "text": "BEST SELLERS", "url": "/products/best-sellers" },
+      "title": { "text": "BEST SELLERS", "url": "/shop/best-sellers" },
       "sublinks": [],
       "id": "3def"
     },
     {
-      "title": { "text": "POPULAR", "url": "/products/popular" },
+      "title": { "text": "POPULAR", "url": "/shop/popular" },
       "sublinks": [],
       "id": "4def"
     }
