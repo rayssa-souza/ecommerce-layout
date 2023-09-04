@@ -26,7 +26,7 @@ const PopularProducts = ({ children }) => {
               >
                 <div className="popular-products-img">
                   <Link to="/" title={productItem.title}>
-                    <img alt="product-img" src={productItem.url} />
+                    <img alt="product-img" src={productItem.image} />
                   </Link>
                   <div className="popular-products-text">
                     <div className="popular-title-wrapper">
@@ -83,7 +83,7 @@ const PopularProducts = ({ children }) => {
             return (
               <div className="popular-products-img" key={productItem.id}>
                 <Link to="/" title={productItem.title}>
-                  <img alt="product-img" src={productItem.url} />
+                  <img alt="product-img" src={productItem.image} />
                 </Link>
                 <div className="popular-products-text">
                   <div className="popular-title-wrapper">

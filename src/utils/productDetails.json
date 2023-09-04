@@ -1,0 +1,310 @@
+{
+  "aha-30-bha": {
+    "title": "AHA 30% + BHA",
+    "ratings": 4.6,
+    "price": 8.55,
+    "id": "aha-30-bha",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw9ef29ca7/Images/products/The%20Ordinary/rdn-argireline-solution-10pct-30ml.png?sw=440&sh=440&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+    "additional_information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labor",
+    "parentCategory": {
+      "title": "Skincare",
+      "url": "/skin-care"
+    },
+    "subcategory": "serum",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  },
+  "lactic-acid-10": {
+    "title": "Latic Acid 10%",
+    "ratings": 4.2,
+    "price": 8.92,
+    "id": "lactic-acid-10",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwa98551aa/Images/products/The%20Ordinary/rdn-aha-30pct-bha-2pct-peeling-solution-30ml.png?sw=440&sh=440&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Skincare",
+      "url": "/skin-care"
+    },
+    "subcategory": "serum",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  },
+  "multi-peptide-brown-and-lash-serum": {
+    "title": "Multi-Peptide Brown and Lash Serum",
+    "ratings": 4.8,
+    "price": 14.5,
+    "id": "multi-peptide-brown-and-lash-serum",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw072fb36c/Images/products/The%20Ordinary/rdn-multi-peptide-lash-and-brow-serum-eu-5ml.png?sw=1200&sh=1200&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Skincare",
+      "url": "/skin-care"
+    },
+    "subcategory": "serum",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  },
+  "multi-peptide-ha-serum": {
+    "title": "Multi-Peptide + HA Serum",
+    "ratings": 4.8,
+    "price": 17.5,
+    "id": "multi-peptide-ha-serum",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw9ef29ca7/Images/products/The%20Ordinary/rdn-argireline-solution-10pct-30ml.png?sw=440&sh=440&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Skincare",
+      "url": "/skin-care"
+    },
+    "subcategory": "serum",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  },
+  "moisturizing": {
+    "title": "Moisturizing",
+    "ratings": 4.6,
+    "price": 29.5,
+    "id": "moisturizing",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwb45bec24/Images/products/The%20Ordinary/rdn-hair-care-natural-moisturizing-factors-ha-60ml.png?sw=1200&sh=1200&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Skincare",
+      "url": "/skin-care"
+    },
+    "subcategory": "moisturizing",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  },
+  "glycolic-acid-9-toning-solution": {
+    "title": "Glycolic Acid 9% Toning Solution",
+    "ratings": 4.9,
+    "price": 19.5,
+    "id": "glycolic-acid-9-toning-solution",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwc9a72f9b/Images/products/The%20Ordinary/rdn-glycolic-acid-7pct-toning-solution-240ml.png?sw=800&sh=800&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Skincare",
+      "url": "/skin-care"
+    },
+    "subcategory": "toners",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  },
+  "skincare-kit": {
+    "title": "Skincare Kit",
+    "ratings": 4.9,
+    "price": 19.5,
+    "id": "skincare-kit",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dwf6fd5e39/Images/products/deciem/dbs-the-future-set-eu.png?sw=320&sh=320&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Skincare",
+      "url": "/skin-care"
+    },
+    "subcategory": "kit",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  },
+  "salicylic-acid-1-cleanser": {
+    "title": "Salicylic acid 1% Cleanser",
+    "ratings": 4.9,
+    "price": 8.55,
+    "id": "salicylic-acid-1-cleanser",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7046e6c2/Images/products/The%20Ordinary/rdn-mineral-uv-filters-spf-15-with-antioxidants-50ml.png?sw=1200&sh=1200&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "",
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Skincare",
+      "url": "/skin-care"
+    },
+    "subcategory": "cleanser",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high strenght..."
+      }
+    ]
+  },
+  "sulfate-05-shampoo": {
+    "title": "Sulfate 0.5% Shampoo",
+    "ratings": 4.9,
+    "price": 7.99,
+    "id": "sulfate-05-shampoo",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7046e6c2/Images/products/The%20Ordinary/rdn-mineral-uv-filters-spf-15-with-antioxidants-50ml.png?sw=1200&sh=1200&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Hair and Body",
+      "url": "/hair-and-body"
+    },
+    "subcategory": "shampoo",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  },
+  "plant-derived-oil-for-dry-skin": {
+    "title": "Plant-derived Oil for Dry Skin",
+    "ratings": 4.9,
+    "price": 8.12,
+    "id": "plant-derived-oil-for-dry-skin",
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw49ac8a15/Images/products/The%20Ordinary/rdn-100pct-plant-derived-hemi-squalane-30ml.png?sw=1200&sh=1200&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Hair and Body",
+      "url": "/hair-and-body"
+    },
+    "subcategory": "oil",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  },
+  "hyaluronic-acid-25": {
+    "title": "Hyaluronic Acid 2.5%",
+    "ratings": 4.8,
+    "price": 8.12,
+    "id": "hyaluronic-acid-25",
+
+    "image": [
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7acbb761/Images/products/The%20Ordinary/rdn-multi-peptide-eye-serum-15ml.png?sw=320&sh=320&sm=fit",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dwb374acb6/theordinary/plp/retinoid-skincare-plp.jpg",
+      "https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw442e39ab/theordinary/ORD-Ingrident-PLP-Slot-A-Hero-Direct-Acids.jpg"
+    ],
+    "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+    "addiotional_information": "",
+    "parentCategory": {
+      "title": "Skincare",
+      "url": "/skin-care"
+    },
+    "subcategory": "moisturizing",
+    "specs": [
+      {
+        "title": "Regimen Step 2: Treat",
+        "description": "A high-stregth treatment that works to reveal smoother skin.",
+        "target": "Uneven Skin Tone, Dullness, Textural Irregularities.",
+        "suited to": "Dry Skin",
+        "format": "Water-based",
+        "key-ingredients": "AHA 30%, BHA, Tasmannia Fruit/Leaf Extract."
+      }
+    ]
+  }
+}

@@ -15,7 +15,6 @@ const Main = () => {
   const popularProducts = catalog["popular"];
   return (
     <div className="main">
-      <Header />
       <Container>
         <Sliders
           settings={{
@@ -66,7 +65,6 @@ const Main = () => {
         <Section text={"POPULAR"} link={`/shop/${popularProducts.id}`} />
 
         <PopularProducts />
-        <Footer />
       </Container>
     </div>
   );

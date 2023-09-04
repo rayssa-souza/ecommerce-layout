@@ -9,8 +9,12 @@ const GridItem = ({ children, xs, sm, lg, spacing = 0 }) => {
     if (isTablet) return sm;
     if (isDesktop) return lg;
 
-    return "100%";
+    return null;
   };
+
+  if (getWidth() === null) {
+    return null;
+  }
 
   return (
     <div

@@ -22,5 +22,4 @@ https://www.behance.net/gallery/167254199/The-ordinary-website-E-commerce?tracki
 Image credits:
 https://theordinary.com/en-br
 
-DISCLAIMER: This is non-commercial project. All images are used for non-commercial, presentational purposes only and belong to their respective owners.
-The setted products titles and their prices are ficctional and not reliable. If you're insterested in the brand or any of the products please visit their oficial website.
+DISCLAIMER: This is a project made by my own initiative to showcase my technical skills in web development. All images are used for non-commercial purposes only and belong to their respective owners. The setted product info and their prices are fictional, therefore not reliable. If you're insterested in the brand or any of their products please visit their oficial website.

@@ -46,7 +46,7 @@ const BestSellersProducts = ({ children }) => {
           return (
             <div className="best-sellers-products-img" key={productItem.id}>
               <Link to="/" title={productItem.title}>
-                <img alt="product-img" src={productItem.url} />
+                <img alt="product-img" src={productItem.image} />
               </Link>
               <div className="best-sellers-products-text">
                 <div className="best-sellers-title-wrapper">

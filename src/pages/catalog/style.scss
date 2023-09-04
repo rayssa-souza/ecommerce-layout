@@ -3,6 +3,9 @@
 @use "../../assets/styles/typography.scss";
 
 .catalogue {
+  font-family: typography.$font-family;
+  color: colors.$black;
+
   .catalogue-products-img {
     img {
       width: 100%;
@@ -10,9 +13,7 @@
     }
 
     .catalogue-products-text {
-      font-family: typography.$font-family;
       font-size: typography.$font-size-small-2;
-      color: colors.$black;
       .catalogue-title-wrapper {
         display: flex;
         justify-content: space-between;
@@ -35,5 +36,10 @@
         font-weight: typography.$font-weight-text;
       }
     }
+  }
+  .catalogue-span {
+    font-size: typography.$font-size-medium;
+    font-weight: typography.$font-weight-text;
+    margin: 30px 0;
   }
 }

@@ -6,7 +6,7 @@
       "id": "1abc"
     },
     {
-      "title": { "text": "ABOUT US", "url": "/fake" },
+      "title": { "text": "ABOUT US", "url": null },
       "sublinks": [],
       "id": "2abc"
     },
@@ -23,9 +23,9 @@
     {
       "title": { "text": "CUSTOMER CARE", "url": null },
       "sublinks": [
-        { "text": "FAQ", "url": "/shop/skincare", "id": 4 },
-        { "text": "Disposal Instructions", "url": "/fake", "id": 5 },
-        { "text": "Return Policy", "url": "/fake", "id": 6 }
+        { "text": "FAQ", "url": null, "id": 4 },
+        { "text": "Disposal Instructions", "url": null, "id": 5 },
+        { "text": "Return Policy", "url": null, "id": 6 }
       ],
       "id": "4abc"
     }

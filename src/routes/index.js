@@ -5,11 +5,6 @@ const Main = lazy(() => import("../pages/main"));
 const Catalog = lazy(() => import("../pages/catalog"));
 const Product = lazy(() => import("../pages/product"));
 
-console.log({
-  Main,
-  Product,
-  Catalog,
-});
 const AppRoutes = () => {
   return (
     <div>
