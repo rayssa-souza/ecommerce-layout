@@ -16,7 +16,7 @@ const FavoriteProductButton = () => {
     <div className="favorite-products">
       <IconButton
         icon={isfavorite ? <AiFillHeart /> : <AiOutlineHeart />}
-        color={isfavorite ? "red" : ""}
+        color={isfavorite ? "red" : undefined}
         onClick={handleisFavorite}
       />
     </div>

@@ -7,19 +7,27 @@
   background-color: transparent;
   border: none;
   padding: 0;
-  font-size: typography.$font-size-default;
   cursor: pointer;
+  &.red-color {
+    color: colors.$red;
+  }
+  &.black-color {
+    color: colors.$black;
+  }
+  &.gray-color {
+    color: colors.$gray;
+  }
+  &.default-size {
+    font-size: typography.$font-size-default;
+  }
+  &.medium-size {
+    font-size: typography.$font-size-medium;
+  }
+  &.large-size {
+    font-size: typography.$font-size-large;
+  }
 }
 
-.button-color-red {
-  color: colors.$red;
-}
-.button-color-black {
-  color: colors.$black;
-}
-.button-color-gray {
-  color: colors.$gray;
-}
 @media screen and (min-width: breakpoints.$desktop) {
   .button-icon {
     font-size: typography.$font-size-medium;

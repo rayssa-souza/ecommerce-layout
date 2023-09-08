@@ -14,7 +14,7 @@
       },
       {
         "title": "Plant-derived Oil for Dry Skin",
-        "subcategory": "oil",
+        "subcategory": "body",
         "image": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw49ac8a15/Images/products/The%20Ordinary/rdn-100pct-plant-derived-hemi-squalane-30ml.png?sw=1200&sh=1200&sm=fit",
         "price": 8.12,
         "url": "/p/plant-derived-oil-for-dry-skin",
@@ -23,7 +23,7 @@
     ]
   },
   "body": {
-    "title": "body",
+    "title": "Body",
     "id": "body",
     "parentCategory": {
       "title": "Hair and Body",
@@ -57,7 +57,7 @@
       {
         "title": "Salicylic acid 1% Cleanser",
 
-        "subcategory": "cleanser",
+        "subcategory": "cleansers",
 
         "image": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7046e6c2/Images/products/The%20Ordinary/rdn-mineral-uv-filters-spf-15-with-antioxidants-50ml.png?sw=1200&sh=1200&sm=fit",
         "price": 8.55,
@@ -316,9 +316,9 @@
       }
     ]
   },
-  "toner": {
+  "toners": {
     "title": "Toner",
-    "id": "toner",
+    "id": "toners",
     "parentCategory": {
       "title": "Skincare",
       "url": "/skin-care"
@@ -355,9 +355,9 @@
       }
     ]
   },
-  "cleanser": {
-    "title": "Cleanser",
-    "id": "cleanser",
+  "cleansers": {
+    "title": "Cleansers",
+    "id": "cleansers",
     "parentCategory": {
       "title": "Skincare",
       "url": "/skin-care"
@@ -366,7 +366,7 @@
       {
         "title": "Salicylic acid 1% Cleanser",
 
-        "subcategory": "cleanser",
+        "subcategory": "cleansers",
 
         "image": "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7046e6c2/Images/products/The%20Ordinary/rdn-mineral-uv-filters-spf-15-with-antioxidants-50ml.png?sw=1200&sh=1200&sm=fit",
         "price": 8.55,

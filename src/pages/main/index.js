@@ -1,14 +1,12 @@
 import React from "react";
-import Header from "../../components/header";
 import "./style.scss";
 import Section from "../../components/section";
 import Container from "../../components/container";
-import Footer from "../../components/footer";
+
 import BestSellersProducts from "../../components/best-sellers-products";
 import PopularProducts from "../../components/popular-products";
 import Sliders from "../../components/slider-carrousel";
 import catalog from "../../utils/catalog.json";
-import { Navigate } from "react-router-dom";
 
 const Main = () => {
   const bestSellersProducts = catalog["best-sellers"];

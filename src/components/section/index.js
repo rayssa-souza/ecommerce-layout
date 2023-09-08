@@ -3,7 +3,6 @@ import "./style.scss";
 import { Link } from "react-router-dom";
 
 const Section = ({ children, text, link }) => {
-  console.log({ link });
   return (
     <div className="section">
       <div className="section-header">

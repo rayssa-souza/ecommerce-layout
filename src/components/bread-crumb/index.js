@@ -5,7 +5,7 @@ import { MdOutlineArrowRight } from "react-icons/md";
 import clsx from "clsx";
 import "./style.scss";
 
-const BreadCrumb = ({ category, subCategory }) => {
+const BreadCrumb = ({ category, subCategory, product }) => {
   const location = useLocation();
 
   return (
@@ -44,7 +44,8 @@ const BreadCrumb = ({ category, subCategory }) => {
             to={`/shop${category.url}/${subCategory.url}`}
             title={subCategory.title}
             className={clsx({
-              "breadcrumb-active": `/shop${category.url}/${subCategory.url}`,
+              "breadcrumb-active":
+                location.pathname === `/shop${category.url}/${subCategory.url}`,
               "breadcrumb-not-active": true,
             })}
           >
@@ -53,7 +54,7 @@ const BreadCrumb = ({ category, subCategory }) => {
         </>
       ) : (
         <Link
-          to={`/shop${category.url}`}
+          to={`/shop/${category.url}`}
           title={category.title}
           className={clsx({
             "breadcrumb-active": location.pathname.includes(`${category.url}`),
@@ -63,6 +64,23 @@ const BreadCrumb = ({ category, subCategory }) => {
           <span>{category.title}</span>
         </Link>
       )}
+      {product && (
+        <>
+          <div className="breadcrumb-arrow">
+            <MdOutlineArrowRight />
+          </div>
+          <Link
+            to={`/p/${product.url}`}
+            title={product.title}
+            className={clsx({
+              "breadcrumb-active": location.pathname.includes(`${product.url}`),
+              "breadcrumb-not-active": true,
+            })}
+          >
+            <span>{product.title}</span>
+          </Link>
+        </>
+      )}
     </div>
   );
 };
@@ -70,7 +88,7 @@ export default BreadCrumb;
 
 // v => code the bread crumb component with category, subcategory and product;
 // v => finish off the catalog component through inserting the products category on top of the div and addind link to the "hair and body" title.
-//=> code the product page using the productsDetail json.
+// ... => code the product page using the productsDetail json.
 // v => Fill out the productsDetail.json with the products info from the catalog. Fetch info from the ordinary website.
 //=> Call the bs and pop component on the product page.
 //=> code the favorite products behavior.(context ansd local storage). And move the icon inside the image on mobile version.

@@ -4,12 +4,12 @@
       "title": { "text": "SKINCARE", "url": "/shop/skin-care" },
       "sublinks": [
         {
-          "text": "Cleanser",
-          "url": "/shop/skin-care/cleanser",
+          "text": "Cleansers",
+          "url": "/shop/skin-care/cleansers",
           "id": "1ghi"
         },
         { "text": "Serum", "url": "/shop/skin-care/serum", "id": "2ghi" },
-        { "text": "Toner", "url": "/shop/skin-care/toner", "id": "3ghi" },
+        { "text": "Toners", "url": "/shop/skin-care/toners", "id": "3ghi" },
         {
           "text": "Moisturizing",
           "url": "/shop/skin-care/moisturizing",

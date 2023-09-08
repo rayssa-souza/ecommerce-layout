@@ -3,7 +3,6 @@ import "./style.scss";
 import products from "../../utils/products.json";
 import GridItem from "../grid-item";
 import GridContainer from "../grid-container";
-import Slider from "react-slick";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { Link } from "react-router-dom";
 import FavoriteProductButton from "../favorite-product-button";
@@ -25,13 +24,13 @@ const PopularProducts = ({ children }) => {
                 key={productItem.id}
               >
                 <div className="popular-products-img">
-                  <Link to="/" title={productItem.title}>
+                  <Link to={productItem.url} title={productItem.title}>
                     <img alt="product-img" src={productItem.image} />
                   </Link>
                   <div className="popular-products-text">
                     <div className="popular-title-wrapper">
                       <h2>
-                        <Link to="/" title={productItem.title}>
+                        <Link to={productItem.url} title={productItem.title}>
                           {productItem.title}
                         </Link>
                       </h2>

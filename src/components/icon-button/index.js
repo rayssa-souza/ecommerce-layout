@@ -1,20 +1,23 @@
 import React from "react";
+import clsx from "clsx";
 import "./style.scss";
 
-const IconButton = ({ children, icon, onClick, color = "black" }) => {
-  const getColor = () => {
-    if (color === "red") {
-      return "button-color-red";
-    }
-
-    if (color === "gray") {
-      return "button-color-gray";
-    }
-
-    return "button-color-black";
-  };
+const IconButton = ({
+  children,
+  icon,
+  size = "default",
+  onClick,
+  color = "black",
+}) => {
   return (
-    <button className={`button-icon ${getColor()}`} onClick={onClick}>
+    <button
+      className={clsx({
+        "button-icon": true,
+        [`${color}-color`]: true,
+        [`${size}-size`]: true,
+      })}
+      onClick={onClick}
+    >
       {icon}
       {children}
     </button>

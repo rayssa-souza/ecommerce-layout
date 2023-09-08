@@ -1,0 +1,24 @@
+@use "../../assets/styles/breakpoints.scss";
+
+@use "../../assets/styles/colors.scss";
+
+@use "../../assets/styles/typography.scss";
+
+.accordion-info {
+  padding-top: 15px;
+  font-family: typography.$font-family;
+  font-size: typography.$font-size-small-1;
+  .accordion-info-title {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 0 0;
+    border-bottom: 1px solid colors.$gray;
+    font-size: typography.$font-size-default;
+    span {
+      font-weight: typography.$font-weight-text;
+    }
+  }
+  .accordion-info-description {
+    padding-top: 15px;
+  }
+}

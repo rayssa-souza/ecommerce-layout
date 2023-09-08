@@ -1,0 +1,55 @@
+@use "../../assets/styles/breakpoints.scss";
+
+@use "../../assets/styles/colors.scss";
+
+@use "../../assets/styles/typography.scss";
+
+.product-page {
+  font-family: typography.$font-family;
+  font-size: typography.$font-size-small-1;
+  .product-page-info {
+    padding-top: 25px;
+    .product-page-title-and-price {
+      display: flex;
+      flex-direction: column;
+      .product-page-title {
+        font-size: typography.$font-size-medium;
+        font-weight: typography.$font-weight-text;
+      }
+      .product-page-price {
+        margin-top: 20px;
+        font-size: typography.$font-size-default;
+        font-weight: typography.$font-weight-text;
+      }
+    }
+
+    .product-page-specs {
+      margin-top: 20px;
+      > div {
+        padding: 20px 0 10px 0;
+        border-bottom: 1px solid colors.$gray;
+        span {
+          display: block;
+          margin-bottom: 10px;
+          font-weight: typography.$font-weight-text;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: breakpoints.$desktop) {
+    .product-page-info {
+      padding-top: 0;
+      padding-left: 25px;
+
+      .product-page-title-and-price {
+        .product-page-title {
+          font-size: typography.$font-size-large;
+        }
+        .product-page-price {
+          font-size: typography.$font-size-medium;
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,13 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import catalog from "../../utils/catalog.json";
+import productDetail from "../../utils/productDetails.json";
 import GridContainer from "../../components/grid-container";
 import GridItem from "../../components/grid-item";
 import FavoriteProductButton from "../../components/favorite-product-button";
 import Container from "../../components/container";
 import BreadCrumb from "../../components/bread-crumb";
+
 import "./style.scss";
 
 const Catalogue = () => {

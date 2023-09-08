@@ -1,0 +1,17 @@
+@use "../../assets/styles/colors.scss";
+.product-detail-slider {
+  img {
+    background-color: colors.$background-image;
+  }
+  .product-detail-slider-img {
+    img {
+      width: 100%;
+    }
+  }
+  .product-detail-img-slides {
+    img {
+      width: 100%;
+      cursor: pointer;
+    }
+  }
+}
