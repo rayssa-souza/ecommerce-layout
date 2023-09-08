@@ -70,15 +70,25 @@ const ProductPage = () => {
                   />
                 </>
               )}
-              {isDesktop && <TabInfo />}
-              <Section text={"BEST SELLERS"} link={`/shop/best-sellers`} />
-              <BestSellersProducts />
-              <Section text={"POPULAR"} link={`/shop/popular`} />
-
-              <PopularProducts />
             </div>
           </GridItem>
         </GridContainer>
+        {isDesktop && (
+          <TabInfo
+            tab1={{
+              title: "DESCRIPTION",
+              text: productInfo.description,
+            }}
+            tab2={{
+              title: "ADDITIONAL INFORMATION",
+              text: "teste tes te tes te te t et",
+            }}
+          />
+        )}
+        <Section text={"BEST SELLERS"} link={`/shop/best-sellers`} />
+        <BestSellersProducts />
+        <Section text={"POPULAR"} link={`/shop/popular`} />
+        <PopularProducts />
       </Container>
     </div>
   );

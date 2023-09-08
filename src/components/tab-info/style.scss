@@ -1,0 +1,35 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+
+@use "../../assets/styles/typography.scss";
+
+.tab-info {
+  margin-top: 50px;
+  margin-left: 10px;
+  width: 100%;
+  font-family: typography.$font-family;
+  .tab-info-titles {
+    display: flex;
+    border-bottom: 1px solid colors.$gray;
+    .tab1-info-title,
+    .tab2-info-title {
+      margin-right: 60px;
+      padding: 0 0 30px 0;
+      position: relative;
+      cursor: pointer;
+    }
+    .tab-info-clicked::after {
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background: colors.$black;
+      font-weight: typography.$font-weight-text;
+      content: "";
+    }
+  }
+  .tab-info-texts {
+    padding-top: 20px;
+  }
+}
