@@ -10,7 +10,7 @@
       "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw9ef29ca7/Images/products/The%20Ordinary/rdn-argireline-solution-10pct-30ml.png?sw=440&sh=440&sm=fit"
     ],
     "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
-    "additional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
+    "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Skincare",
       "url": "skin-care"
@@ -339,7 +339,7 @@
       "title": "Hair and Body",
       "url": "/hair-and-body"
     },
-    "subcategory": { "title": "Shampoo", "url": "shampoo" },
+    "subcategory": { "title": "Hair", "url": "hair" },
     "specs": [
       {
         "title": "Regimen Step 2: Treat",

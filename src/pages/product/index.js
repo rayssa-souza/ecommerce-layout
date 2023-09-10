@@ -81,7 +81,7 @@ const ProductPage = () => {
             }}
             tab2={{
               title: "ADDITIONAL INFORMATION",
-              text: "teste tes te tes te te t et",
+              text: productInfo.addiotional_information,
             }}
           />
         )}

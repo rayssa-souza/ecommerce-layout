@@ -4,9 +4,11 @@ import { useLocation } from "react-router-dom";
 import { MdOutlineArrowRight } from "react-icons/md";
 import clsx from "clsx";
 import "./style.scss";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const BreadCrumb = ({ category, subCategory, product }) => {
   const location = useLocation();
+  // const { isDesktop, isTablet, isMobile } = useMediaQuery();
 
   return (
     <div className="breadcrumb">
@@ -54,7 +56,7 @@ const BreadCrumb = ({ category, subCategory, product }) => {
         </>
       ) : (
         <Link
-          to={`/shop/${category.url}`}
+          to={`/shop${category.url}`}
           title={category.title}
           className={clsx({
             "breadcrumb-active": location.pathname.includes(`${category.url}`),
