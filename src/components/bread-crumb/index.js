@@ -8,7 +8,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 
 const BreadCrumb = ({ category, subCategory, product }) => {
   const location = useLocation();
-  // const { isDesktop, isTablet, isMobile } = useMediaQuery();
+  const { isDesktop, isTablet, isMobile } = useMediaQuery();
 
   return (
     <div className="breadcrumb">
@@ -38,21 +38,27 @@ const BreadCrumb = ({ category, subCategory, product }) => {
           >
             <span>{category.title}</span>
           </Link>
-          <div className="breadcrumb-arrow">
-            <MdOutlineArrowRight />
-          </div>
 
-          <Link
-            to={`/shop${category.url}/${subCategory.url}`}
-            title={subCategory.title}
-            className={clsx({
-              "breadcrumb-active":
-                location.pathname === `/shop${category.url}/${subCategory.url}`,
-              "breadcrumb-not-active": true,
-            })}
-          >
-            <span>{subCategory.title}</span>
-          </Link>
+          {isDesktop && (
+            <>
+              <div className="breadcrumb-arrow">
+                <MdOutlineArrowRight />
+              </div>
+
+              <Link
+                to={`/shop${category.url}/${subCategory.url}`}
+                title={subCategory.title}
+                className={clsx({
+                  "breadcrumb-active":
+                    location.pathname ===
+                    `/shop${category.url}/${subCategory.url}`,
+                  "breadcrumb-not-active": true,
+                })}
+              >
+                <span>{subCategory.title}</span>
+              </Link>
+            </>
+          )}
         </>
       ) : (
         <Link

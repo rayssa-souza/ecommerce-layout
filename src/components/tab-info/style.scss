@@ -14,20 +14,26 @@
     border-bottom: 1px solid colors.$gray;
     .tab1-info-title,
     .tab2-info-title {
+      color: colors.$gray;
       margin-right: 60px;
       padding: 0 0 30px 0;
       position: relative;
+      font-weight: typography.$font-weight-text;
       cursor: pointer;
     }
-    .tab-info-clicked::after {
-      position: absolute;
-      left: 0;
-      bottom: -1px;
-      width: 100%;
-      height: 2px;
-      background: colors.$black;
-      font-weight: typography.$font-weight-text;
-      content: "";
+    .tab-info-clicked {
+      color: colors.$black;
+
+      &::after {
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        width: 100%;
+        height: 2px;
+        background: colors.$black;
+        color: colors.$black;
+        content: "";
+      }
     }
   }
   .tab-info-texts {
