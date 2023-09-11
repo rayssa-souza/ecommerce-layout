@@ -8,7 +8,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 
 const BreadCrumb = ({ category, subCategory, product }) => {
   const location = useLocation();
-  const { isDesktop, isTablet, isMobile } = useMediaQuery();
+  const { isDesktop } = useMediaQuery();
 
   return (
     <div className="breadcrumb">
