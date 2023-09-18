@@ -1,0 +1,16 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+@use "../../assets/styles/typography.scss";
+
+.ratings {
+  width: 163px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  color: colors.$black;
+  font-size: typography.$font-size-medium;
+  span {
+    font-size: typography.$font-size-small-1;
+    color: colors.$gray;
+  }
+}

@@ -2,11 +2,12 @@
 @use "../../assets/styles/colors.scss";
 @use "../../assets/styles/typography.scss";
 
-.catalogue {
+.favorites {
   font-family: typography.$font-family;
   color: colors.$black;
 
-  .catalogue-span {
+  .favorites-span {
+    display: block;
     font-size: typography.$font-size-medium;
     font-weight: typography.$font-weight-text;
     margin: 30px 0;

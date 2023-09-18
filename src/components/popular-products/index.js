@@ -5,8 +5,8 @@ import GridItem from "../grid-item";
 import GridContainer from "../grid-container";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { Link } from "react-router-dom";
-import FavoriteProductButton from "../favorite-product-button";
 import SliderCarousel from "../slider-carrousel";
+import ProductItem from "../product-item";
 
 const PopularProducts = ({ children }) => {
   const { isDesktop } = useMediaQuery();
@@ -23,22 +23,7 @@ const PopularProducts = ({ children }) => {
                 spacing={5}
                 key={productItem.id}
               >
-                <div className="popular-products-img">
-                  <Link to={productItem.url} title={productItem.title}>
-                    <img alt="product-img" src={productItem.image} />
-                  </Link>
-                  <div className="popular-products-text">
-                    <div className="popular-title-wrapper">
-                      <h2>
-                        <Link to={productItem.url} title={productItem.title}>
-                          {productItem.title}
-                        </Link>
-                      </h2>
-                      <FavoriteProductButton />
-                    </div>
-                    <h3 className="popular-price">{`$ ${productItem.price}`}</h3>
-                  </div>
-                </div>
+                <ProductItem product={productItem} key={productItem.title} />
               </GridItem>
             );
           })}
@@ -80,22 +65,7 @@ const PopularProducts = ({ children }) => {
         >
           {products.popular_products.map((productItem, index) => {
             return (
-              <div className="popular-products-img" key={productItem.id}>
-                <Link to="/" title={productItem.title}>
-                  <img alt="product-img" src={productItem.image} />
-                </Link>
-                <div className="popular-products-text">
-                  <div className="popular-title-wrapper">
-                    <h2>
-                      <Link to="/" title={productItem.title}>
-                        {productItem.title}
-                      </Link>
-                    </h2>
-                    <FavoriteProductButton />
-                  </div>
-                  <h3 className="popular-price">{`$ ${productItem.price}`}</h3>
-                </div>
-              </div>
+              <ProductItem product={productItem} key={productItem.title} />
             );
           })}
         </SliderCarousel>

@@ -1,0 +1,13 @@
+{
+  "favorites": {
+    "title": "favorites",
+    "url": "/favorites",
+    "id": "1mno"
+  },
+
+  "cart": {
+    "title": "cart",
+    "url": "/cart",
+    "id": "2mno"
+  }
+}

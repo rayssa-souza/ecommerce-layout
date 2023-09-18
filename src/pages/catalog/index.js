@@ -1,18 +1,15 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import catalog from "../../utils/catalog.json";
-import productDetail from "../../utils/productDetails.json";
 import GridContainer from "../../components/grid-container";
 import GridItem from "../../components/grid-item";
-import FavoriteProductButton from "../../components/favorite-product-button";
 import Container from "../../components/container";
 import BreadCrumb from "../../components/bread-crumb";
-
 import "./style.scss";
+import ProductItem from "../../components/product-item";
 
 const Catalogue = () => {
   const { category, subcategory } = useParams();
-
   const key = subcategory ? subcategory : category;
   const productsCategory = catalog[key];
 
@@ -48,22 +45,7 @@ const Catalogue = () => {
                 spacing={5}
                 key={item.id}
               >
-                <div className="catalogue-products-img">
-                  <Link to={item.url} title={item.title}>
-                    <img alt="product-img" src={item.image} />
-                  </Link>
-                  <div className="catalogue-products-text">
-                    <div className="catalogue-title-wrapper">
-                      <h2>
-                        <Link to={item.url} title={item.title}>
-                          {item.title}
-                        </Link>
-                      </h2>
-                      <FavoriteProductButton />
-                    </div>
-                    <h3 className="catalogue-price">{`$ ${item.price}`}</h3>
-                  </div>
-                </div>
+                <ProductItem product={item} />
               </GridItem>
             );
           })}

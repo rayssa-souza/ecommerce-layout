@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.scss";
-
 import products from "../../utils/products.json";
-import FavoriteProductButton from "../favorite-product-button";
-import Sliders from "../slider-carrousel";
+import useMediaQuery from "../../hooks/useMediaQuery";
 import { Link } from "react-router-dom";
 import SliderCarousel from "../slider-carrousel";
+import ProductItem from "../product-item";
 
 const BestSellersProducts = ({ children }) => {
+  const { isDesktop } = useMediaQuery();
   return (
     <div className="best-sellers-products">
       <SliderCarousel
@@ -43,25 +43,7 @@ const BestSellersProducts = ({ children }) => {
         }}
       >
         {products.best_sellers.map((productItem) => {
-          return (
-            <div className="best-sellers-products-img" key={productItem.id}>
-              <Link to={productItem.url} title={productItem.title}>
-                <img alt="product-img" src={productItem.image} />
-              </Link>
-              <div className="best-sellers-products-text">
-                <div className="best-sellers-title-wrapper">
-                  <h2>
-                    <Link to={productItem.url} title={productItem.title}>
-                      {productItem.title}
-                    </Link>
-                  </h2>
-                  <FavoriteProductButton />
-                </div>
-
-                <h3 className="best-sellers-price">$ {productItem.price}</h3>
-              </div>
-            </div>
-          );
+          return <ProductItem product={productItem} />;
         })}
       </SliderCarousel>
 

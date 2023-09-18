@@ -1,7 +1,7 @@
 {
   "aha-30-bha": {
     "title": "AHA 30% + BHA",
-    "ratings": 4.6,
+    "ratings": 5.0,
     "price": 8.55,
     "id": "aha-30-bha",
     "image": [
@@ -13,7 +13,7 @@
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Skincare",
-      "url": "/skin-care"
+      "url": "/shop/skin-care"
     },
     "subcategory": { "title": "Serum", "url": "serum" },
     "specs": [
@@ -41,7 +41,7 @@
   },
   "lactic-acid-10": {
     "title": "Latic Acid 10%",
-    "ratings": 4.2,
+    "ratings": 4.0,
     "price": 8.92,
     "id": "lactic-acid-10",
     "image": [
@@ -54,7 +54,7 @@
 
     "parentCategory": {
       "title": "Skincare",
-      "url": "/skin-care"
+      "url": "/shop/skin-care"
     },
     "subcategory": { "title": "Serum", "url": "serum" },
     "specs": [
@@ -82,7 +82,7 @@
   },
   "multi-peptide-brown-and-lash-serum": {
     "title": "Multi-Peptide Brown and Lash Serum",
-    "ratings": 4.8,
+    "ratings": 5.0,
     "price": 14.5,
     "id": "multi-peptide-brown-and-lash-serum",
     "image": [
@@ -96,7 +96,7 @@
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Skincare",
-      "url": "/skin-care"
+      "url": "/shop/skin-care"
     },
     "subcategory": { "title": "Serum", "url": "serum" },
     "specs": [
@@ -124,7 +124,7 @@
   },
   "multi-peptide-ha-serum": {
     "title": "Multi-Peptide + HA Serum",
-    "ratings": 4.8,
+    "ratings": 4.7,
     "price": 17.5,
     "id": "multi-peptide-ha-serum",
     "image": [
@@ -136,7 +136,7 @@
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Skincare",
-      "url": "/skin-care"
+      "url": "/shop/skin-care"
     },
     "subcategory": { "title": "Serum", "url": "serum" },
     "specs": [
@@ -164,7 +164,7 @@
   },
   "moisturizing": {
     "title": "Moisturizing",
-    "ratings": 4.6,
+    "ratings": 4.8,
     "price": 29.5,
     "id": "moisturizing",
     "image": [
@@ -176,7 +176,7 @@
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Skincare",
-      "url": "/skin-care"
+      "url": "/shop/skin-care"
     },
     "subcategory": { "title": "Moisturizing", "url": "moisturizing" },
     "specs": [
@@ -216,7 +216,7 @@
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Skincare",
-      "url": "/skin-care"
+      "url": "/shop/skin-care"
     },
     "subcategory": { "title": "Toners", "url": "toners" },
     "specs": [
@@ -244,7 +244,7 @@
   },
   "skincare-kit": {
     "title": "Skincare Kit",
-    "ratings": 4.9,
+    "ratings": 4.0,
     "price": 19.5,
     "id": "skincare-kit",
     "image": [
@@ -257,7 +257,7 @@
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Skincare",
-      "url": "/skin-care"
+      "url": "/shop/skin-care"
     },
     "subcategory": { "title": "Kit", "url": "kit" },
     "specs": [
@@ -285,7 +285,7 @@
   },
   "salicylic-acid-1-cleanser": {
     "title": "Salicylic acid 1% Cleanser",
-    "ratings": 4.9,
+    "ratings": 4.7,
     "price": 8.55,
     "id": "salicylic-acid-1-cleanser",
     "image": [
@@ -297,7 +297,7 @@
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Skincare",
-      "url": "/skin-care"
+      "url": "/shop/skin-care"
     },
     "subcategory": { "title": "Cleanser", "url": "cleansers" },
     "specs": [
@@ -325,19 +325,19 @@
   },
   "sulfate-05-shampoo": {
     "title": "Sulfate 0.5% Shampoo",
-    "ratings": 4.9,
+    "ratings": 4.8,
     "price": 7.99,
     "id": "sulfate-05-shampoo",
     "image": [
-      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7046e6c2/Images/products/The%20Ordinary/rdn-mineral-uv-filters-spf-15-with-antioxidants-50ml.png?sw=1200&sh=1200&sm=fit",
-      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7046e6c2/Images/products/The%20Ordinary/rdn-mineral-uv-filters-spf-15-with-antioxidants-50ml.png?sw=1200&sh=1200&sm=fit",
-      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7046e6c2/Images/products/The%20Ordinary/rdn-mineral-uv-filters-spf-15-with-antioxidants-50ml.png?sw=1200&sh=1200&sm=fit"
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7e4d4285/Images/products/The%20Ordinary/rdn-behentrimonium-chloride-2pct-conditioner-240ml.png?sw=220&sh=220&sm=fit",
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7e4d4285/Images/products/The%20Ordinary/rdn-behentrimonium-chloride-2pct-conditioner-240ml.png?sw=220&sh=220&sm=fit",
+      "https://theordinary.com/dw/image/v2/BFKJ_PRD/on/demandware.static/-/Sites-deciem-master/default/dw7e4d4285/Images/products/The%20Ordinary/rdn-behentrimonium-chloride-2pct-conditioner-240ml.png?sw=220&sh=220&sm=fit"
     ],
     "description": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Hair and Body",
-      "url": "/hair-and-body"
+      "url": "/shop/hair-and-body"
     },
     "subcategory": { "title": "Hair", "url": "hair" },
     "specs": [
@@ -377,7 +377,7 @@
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Hair and Body",
-      "url": "/hair-and-body"
+      "url": "/shop/hair-and-body"
     },
     "subcategory": { "title": "Body", "url": "body" },
     "specs": [
@@ -405,7 +405,7 @@
   },
   "hyaluronic-acid-25": {
     "title": "Hyaluronic Acid 2.5%",
-    "ratings": 4.8,
+    "ratings": 5.0,
     "price": 8.12,
     "id": "hyaluronic-acid-25",
 
@@ -418,7 +418,7 @@
     "addiotional_information": "Hyaluronic Acid + LA is a skin care exfoliator containing Lactic Acid and HA. It helps exfoliate the top layer of skin, removing cells and stimulating skin appreciation.",
     "parentCategory": {
       "title": "Skincare",
-      "url": "/skin-care"
+      "url": "/shop/skin-care"
     },
     "subcategory": { "title": "Moisturizing", "url": "moisturizing" },
     "specs": [

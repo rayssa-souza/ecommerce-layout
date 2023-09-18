@@ -29,10 +29,10 @@ const BreadCrumb = ({ category, subCategory, product }) => {
       {subCategory ? (
         <>
           <Link
-            to={`/shop${category.url}`}
+            to={category.url}
             title={category.title}
             className={clsx({
-              "breadcrumb-active": location.pathname === `/shop${category.url}`,
+              "breadcrumb-active": location.pathname === `${category.url}`,
               "breadcrumb-not-active": true,
             })}
           >
@@ -46,12 +46,11 @@ const BreadCrumb = ({ category, subCategory, product }) => {
               </div>
 
               <Link
-                to={`/shop${category.url}/${subCategory.url}`}
+                to={`${category.url}/${subCategory.url}`}
                 title={subCategory.title}
                 className={clsx({
                   "breadcrumb-active":
-                    location.pathname ===
-                    `/shop${category.url}/${subCategory.url}`,
+                    location.pathname === `${category.url}/${subCategory.url}`,
                   "breadcrumb-not-active": true,
                 })}
               >
@@ -62,7 +61,7 @@ const BreadCrumb = ({ category, subCategory, product }) => {
         </>
       ) : (
         <Link
-          to={`/shop${category.url}`}
+          to={`${category.url}`}
           title={category.title}
           className={clsx({
             "breadcrumb-active": location.pathname.includes(`${category.url}`),

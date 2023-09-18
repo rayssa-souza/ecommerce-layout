@@ -13,6 +13,7 @@ import Container from "../container";
 import HeaderMenuMobile from "../header-menu-mobile";
 import HeaderMenuDesktop from "../header-menu-desktop";
 import headerNavLinks from "../../utils/headerNavLinks.json";
+import headerActions from "../../utils/headerActions.json";
 import IconButton from "../icon-button";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
@@ -33,6 +34,7 @@ const Header = () => {
     setIsMenuOpen(false);
   }, [pathname]);
 
+  const handleOpenFavorites = () => {};
   return (
     <header className="header">
       <Container>
@@ -60,9 +62,19 @@ const Header = () => {
 
           <div className="header-action-buttons">
             <div className="header-actions-shop">
+              <Link
+                to={headerActions.favorites.url}
+                title={headerActions.favorites.title}
+              >
+                <IconButton icon={<AiFillHeart />} />
+              </Link>
+              <Link
+                to={headerActions.cart.url}
+                title={headerActions.cart.title}
+              >
+                <IconButton icon={<AiFillShopping />} />
+              </Link>
               <IconButton icon={<AiOutlineSearch />} />
-              <IconButton icon={<AiFillHeart />} />
-              <IconButton icon={<AiFillShopping />} />
             </div>
             {(isMobile || isTablet) && (
               <IconButton

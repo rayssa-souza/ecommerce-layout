@@ -14,8 +14,9 @@ import TabInfo from "../../components/tab-info";
 import useMediaQuery from "../../hooks/useMediaQuery";
 import BestSellersProducts from "../../components/best-sellers-products";
 import PopularProducts from "../../components/popular-products";
+import Ratings from "../../components/rating";
 
-const ProductPage = () => {
+const Product = () => {
   const { productId } = useParams();
   const { isMobile, isTablet, isDesktop } = useMediaQuery();
 
@@ -44,6 +45,7 @@ const ProductPage = () => {
             <div className="product-page-info">
               <div className="product-page-title-and-price">
                 <h1 className="product-page-title">{productInfo.title}</h1>
+                <Ratings rating={productInfo.ratings} />
                 <span className="product-page-price">
                   $ {productInfo.price}
                 </span>
@@ -94,4 +96,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default Product;
