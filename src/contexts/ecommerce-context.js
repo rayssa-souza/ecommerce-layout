@@ -33,10 +33,23 @@ export default function reducer(state = intitialState, { type, payload }) {
         favorites: [...state.favorites, payload],
       };
     case actionTypes.ADD_TO_CART:
-      return {
-        ...state,
-        cart: [...state.cart, payload],
-      };
+      if (state.cart.find((item) => item.title === payload.title)) {
+        return {
+          ...state,
+          cart: state.cart.map((item) => {
+            if (item.title === payload.title) {
+              return { ...item, quantity: item.quantity + payload.quantity };
+            }
+            return item;
+          }),
+        };
+      } else {
+        return {
+          ...state,
+          cart: [...state.cart, payload],
+        };
+      }
+
     case actionTypes.REMOVE_FROM_CART:
       return {
         ...state,

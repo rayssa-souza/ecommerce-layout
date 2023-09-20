@@ -24,7 +24,6 @@ const ProductItem = ({ product }) => {
       dispatch(actionCreators.addFavorite(product));
     }
   };
-  console.log(state);
 
   return (
     <div className="product-item-img">

@@ -1,0 +1,33 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+@use "../../assets/styles/typography.scss";
+
+.add-to-cart-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  .add-to-cart-button-wrapper {
+    width: 150px;
+    display: flex;
+    border: 1px solid colors.$gray;
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+    }
+    .add-to-cart-button-counter {
+      border-right: 1px solid colors.$gray;
+      border-left: 1px solid colors.$gray;
+    }
+  }
+
+  @media screen and (min-width: breakpoints.$tablet) {
+    justify-content: flex-start;
+    .add-to-cart-button-wrapper {
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+}

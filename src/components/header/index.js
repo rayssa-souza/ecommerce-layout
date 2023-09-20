@@ -62,19 +62,19 @@ const Header = () => {
 
           <div className="header-action-buttons">
             <div className="header-actions-shop">
+              <IconButton icon={<AiOutlineSearch />} size={"medium"} />
               <Link
                 to={headerActions.favorites.url}
                 title={headerActions.favorites.title}
               >
-                <IconButton icon={<AiFillHeart />} />
+                <IconButton icon={<AiFillHeart />} size={"medium"} />
               </Link>
               <Link
                 to={headerActions.cart.url}
                 title={headerActions.cart.title}
               >
-                <IconButton icon={<AiFillShopping />} />
+                <IconButton icon={<AiFillShopping />} size={"medium"} />
               </Link>
-              <IconButton icon={<AiOutlineSearch />} />
             </div>
             {(isMobile || isTablet) && (
               <IconButton

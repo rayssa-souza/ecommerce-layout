@@ -18,7 +18,7 @@ const FooterNav = ({ children, title, sublinks }) => {
           "footernav-h4-sublinks": hasSubLinks,
         })}
       >
-        {title.url ? (
+        {title.url !== null ? (
           <Link to={title.url}>{title.text}</Link>
         ) : (
           <span>{title.text}</span>
@@ -26,11 +26,15 @@ const FooterNav = ({ children, title, sublinks }) => {
       </h4>
       {hasSubLinks ? (
         <ul className="footernav-list-sublinks">
-          {sublinks.map((item) => (
-            <li key={item.id}>
-              <Link to={item.url}>{item.text}</Link>
-            </li>
-          ))}
+          {sublinks.map((item) =>
+            item.url !== null ? (
+              <li key={item.id}>
+                <Link to={item.url}>{item.text}</Link>
+              </li>
+            ) : (
+              <li key={item.id}>{item.text}</li>
+            )
+          )}
         </ul>
       ) : (
         ""

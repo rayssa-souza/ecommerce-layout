@@ -15,6 +15,7 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 import BestSellersProducts from "../../components/best-sellers-products";
 import PopularProducts from "../../components/popular-products";
 import Ratings from "../../components/rating";
+import AddToCartButton from "../../components/add-to-cart-button";
 
 const Product = () => {
   const { productId } = useParams();
@@ -49,6 +50,9 @@ const Product = () => {
                 <span className="product-page-price">
                   $ {productInfo.price}
                 </span>
+                {(isMobile || isTablet) && (
+                  <AddToCartButton product={productInfo} />
+                )}
               </div>
               <div className="product-page-specs">
                 {productInfo.specs.map((item) => {
@@ -60,6 +64,7 @@ const Product = () => {
                   );
                 })}
               </div>
+              {isDesktop && <AddToCartButton product={productInfo} />}
               {(isMobile || isTablet) && (
                 <>
                   <AccordionInfo

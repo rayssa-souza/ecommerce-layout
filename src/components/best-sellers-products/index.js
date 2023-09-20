@@ -43,7 +43,7 @@ const BestSellersProducts = ({ children }) => {
         }}
       >
         {products.best_sellers.map((productItem) => {
-          return <ProductItem product={productItem} />;
+          return <ProductItem product={productItem} key={productItem.title} />;
         })}
       </SliderCarousel>
 

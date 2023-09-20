@@ -1,0 +1,29 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+
+@use "../../assets/styles/typography.scss";
+
+.button-default {
+  min-height: 40px;
+  background-color: transparent;
+  border: none;
+  font-family: typography.$font-family;
+  //   font-weight: typography.$font-weight-text;
+  cursor: pointer;
+
+  &.button-small {
+    width: 200px;
+    font-size: typography.$font-size-small-2;
+  }
+  &.button-black-color {
+    background-color: colors.$black;
+    color: colors.$white;
+  }
+  @media screen and (min-width: breakpoints.$desktop) {
+    &.button-large {
+      width: 220px;
+      height: 50px;
+      font-size: typography.$font-size-small-1;
+    }
+  }
+}
