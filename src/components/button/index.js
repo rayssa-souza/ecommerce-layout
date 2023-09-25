@@ -5,20 +5,25 @@ import "./style.scss";
 const Button = ({
   children,
   text = "Enter your text",
-  size = "small",
+  size,
   color = "black",
   onClick,
+  disabled = false,
 }) => {
   return (
     <button
       className={clsx({
         "button-default": true,
         [`button-${color}-color`]: true,
-        [`button-${size}`]: true,
+        [`button-size-${size}`]: true,
+        "button-disabled": disabled,
+        "button-cursor-pointer": onClick,
       })}
-      onClick={onClick}
+      onClick={disabled ? undefined : onClick}
+      disabled={disabled}
     >
       <span className="button-span">{text}</span>
+
       {children}
     </button>
   );

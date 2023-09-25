@@ -5,6 +5,7 @@ export const actionTypes = {
   REMOVE_FROM_FAVORITE: "REMOVE_FROM_FAVORITE",
   ADD_TO_CART: "ADD_TO_CART",
   REMOVE_FROM_CART: "REMOVE_FROM_CART",
+  UPDATE_CART_ITEM_QUANTITY: "UPDATE_CART_ITEM_QUANTITY",
 };
 
 export const actionCreators = {
@@ -17,6 +18,10 @@ export const actionCreators = {
   removeFromCart: (payload) => ({
     type: actionTypes.REMOVE_FROM_CART,
     payload: { title: payload },
+  }),
+  updateCartItemQuantity: (payload) => ({
+    type: actionTypes.UPDATE_CART_ITEM_QUANTITY,
+    payload: { quantity: payload.quantity, title: payload.title },
   }),
 };
 
@@ -62,6 +67,17 @@ export default function reducer(state = intitialState, { type, payload }) {
         favorites: state.favorites.filter(
           (item) => item.title !== payload.title
         ),
+      };
+    case actionTypes.UPDATE_CART_ITEM_QUANTITY:
+      console.log({ type, payload });
+      return {
+        ...state,
+        cart: state.cart.map((item) => {
+          if (item.title === payload.title) {
+            return { ...item, quantity: payload.quantity };
+          }
+          return item;
+        }),
       };
 
     default:

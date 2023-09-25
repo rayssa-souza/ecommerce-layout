@@ -15,7 +15,7 @@ const Ratings = ({ rating }) => {
         </div>
       );
     }
-    if (rating > 4.5 && rating < 4.9) {
+    if (rating > 4.5 && rating <= 4.9) {
       return (
         <>
           <FaStar />

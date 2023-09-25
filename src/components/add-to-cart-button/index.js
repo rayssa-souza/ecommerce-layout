@@ -10,7 +10,7 @@ import { useState } from "react";
 import { useContext } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import "./style.scss";
-
+import Cart from "../../pages/cart";
 const AddToCartButton = ({ product }) => {
   const { dispatch } = useContext(EcommerceContext);
 

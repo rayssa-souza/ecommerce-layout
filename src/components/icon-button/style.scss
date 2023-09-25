@@ -17,7 +17,7 @@
   &.gray-color {
     color: colors.$gray;
   }
-  &.default-size {
+  &.small-size {
     font-size: typography.$font-size-default;
   }
   &.medium-size {
@@ -26,10 +26,12 @@
   &.large-size {
     font-size: typography.$font-size-large;
   }
-}
-
-@media screen and (min-width: breakpoints.$desktop) {
-  .button-icon {
-    font-size: typography.$font-size-medium;
+  &.button-disabled {
+    color: colors.$gray;
+  }
+  @media screen and (min-width: breakpoints.$desktop) {
+    &.medium-size {
+      font-size: typography.$font-size-medium;
+    }
   }
 }

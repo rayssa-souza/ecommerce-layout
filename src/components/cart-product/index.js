@@ -4,58 +4,113 @@ import {
   actionCreators,
 } from "../../contexts/ecommerce-context";
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import GridContainer from "../../components/grid-container";
-import GridItem from "../../components/grid-item";
-import { AiOutlineMinus, AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
+import { useContext, useState } from "react";
+
+import {
+  AiOutlineMinus,
+  AiOutlinePlus,
+  AiOutlineClose,
+  AiFillHeart,
+  AiOutlineHeart,
+} from "react-icons/ai";
 import IconButton from "../icon-button";
+import clsx from "clsx";
 
 import "./style.scss";
 
-const CartProduct = () => {
+const CartProduct = ({ cartItem, isLast }) => {
   const { state, dispatch } = useContext(EcommerceContext);
 
+  const isFavorite = state.favorites.find((item) => {
+    return item.title === cartItem.title;
+  });
+
+  const handleFavoriteByCart = () => {
+    if (isFavorite) {
+      dispatch(actionCreators.removeFromFavorite(cartItem.title));
+    } else {
+      dispatch(actionCreators.addFavorite(cartItem));
+    }
+  };
+  const handleUpdateItemQuantity = (cartItem) => {
+    dispatch(actionCreators.updateCartItemQuantity(cartItem));
+  };
+
+  const handleRemoveFromCart = () => {
+    dispatch(actionCreators.removeFromCart(cartItem.title));
+  };
+
   return (
-    <div className="cart-product">
-      <GridContainer>
-        {state.cart.map((item) => {
-          return (
-            <GridItem xs={"100%"} sm={"100%"} lg={"60%"} key={item.id}>
-              <div className="cart-product-info">
-                <Link
-                  className="cart-product-image-link"
-                  to={`/p/${item.id}`}
-                  title={item.title}
-                >
-                  <img src={item.image[0]} alt={item.title} />
-                </Link>
-                <div className="cart-product-wrapper">
-                  <div className="cart-product-title-and-price">
-                    <div>
-                      <Link to={`/p/${item.id}`} title={item.title}>
-                        <h2>{item.title}</h2>
-                      </Link>
-                      <h3>$ {item.price}</h3>
-                    </div>
-                    <div className="cart-product-qtd">
-                      <div>
-                        <IconButton icon={<AiOutlinePlus />} size={"small"} />
-                      </div>
-                      <div className="cart-product-counter">1</div>
-                      <div>
-                        <IconButton icon={<AiOutlineMinus />} size={"small"} />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="cart-product-remove-icon">
-                    <IconButton icon={<AiOutlineClose />} size={"small"} />
-                  </div>
-                </div>
-              </div>
-            </GridItem>
-          );
-        })}
-      </GridContainer>
+    <div
+      className={clsx({
+        "cart-product": true,
+        "cart-product-no-border": isLast,
+      })}
+    >
+      <Link
+        className="cart-product-image-link"
+        to={`/p/${cartItem.id}`}
+        title={cartItem.title}
+      >
+        <div className="cart-product-image-wrapper">
+          <img src={cartItem.image[0]} alt={cartItem.title} />
+          <div className="cart-product-favorite">
+            <IconButton
+              icon={isFavorite ? <AiFillHeart /> : <AiOutlineHeart />}
+              color={isFavorite ? "red" : undefined}
+              size={"medium"}
+              onClick={handleFavoriteByCart}
+            />
+          </div>
+        </div>
+      </Link>
+
+      <div className="cart-product-wrapper">
+        <div className="cart-product-title-and-price">
+          <div>
+            <Link to={`/p/${cartItem.id}`} title={cartItem.title}>
+              <h2>{cartItem.title}</h2>
+            </Link>
+            <h3>$ {cartItem.price}</h3>
+          </div>
+          <div className="cart-product-qtd">
+            <div>
+              <IconButton
+                icon={<AiOutlinePlus />}
+                size={"small"}
+                onClick={() =>
+                  handleUpdateItemQuantity({
+                    ...cartItem,
+                    quantity: cartItem.quantity + 1,
+                  })
+                }
+                disabled={cartItem.quantity === 10 && true}
+              />
+            </div>
+            <div className="cart-product-counter">{cartItem.quantity}</div>
+            <div>
+              <IconButton
+                icon={<AiOutlineMinus />}
+                size={"small"}
+                onClick={() =>
+                  handleUpdateItemQuantity({
+                    ...cartItem,
+                    quantity: cartItem.quantity - 1,
+                  })
+                }
+                disabled={cartItem.quantity === 1 && true}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="cart-product-remove-icon">
+          <IconButton
+            icon={<AiOutlineClose />}
+            size={"small"}
+            onClick={handleRemoveFromCart}
+          />
+        </div>
+      </div>
     </div>
   );
 };

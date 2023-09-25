@@ -4,14 +4,13 @@
 @use "../../assets/styles/typography.scss";
 
 .button-default {
+  width: 100%;
   min-height: 40px;
   background-color: transparent;
   border: none;
   font-family: typography.$font-family;
-  //   font-weight: typography.$font-weight-text;
-  cursor: pointer;
 
-  &.button-small {
+  &.button-size-small {
     width: 200px;
     font-size: typography.$font-size-small-2;
   }
@@ -19,8 +18,15 @@
     background-color: colors.$black;
     color: colors.$white;
   }
+  &.button-disabled {
+    background-color: colors.$gray;
+    cursor: not-allowed;
+  }
+  &.button-cursor-pointer {
+    cursor: pointer;
+  }
   @media screen and (min-width: breakpoints.$desktop) {
-    &.button-large {
+    &.button-size-large {
       width: 220px;
       height: 50px;
       font-size: typography.$font-size-small-1;
