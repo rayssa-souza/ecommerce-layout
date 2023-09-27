@@ -9,6 +9,7 @@
   background-color: transparent;
   border: none;
   font-family: typography.$font-family;
+  cursor: pointer;
 
   &.button-size-small {
     width: 200px;
@@ -22,9 +23,7 @@
     background-color: colors.$gray;
     cursor: not-allowed;
   }
-  &.button-cursor-pointer {
-    cursor: pointer;
-  }
+
   @media screen and (min-width: breakpoints.$desktop) {
     &.button-size-large {
       width: 220px;

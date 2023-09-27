@@ -76,20 +76,6 @@ const CartProduct = ({ cartItem, isLast }) => {
           <div className="cart-product-qtd">
             <div>
               <IconButton
-                icon={<AiOutlinePlus />}
-                size={"small"}
-                onClick={() =>
-                  handleUpdateItemQuantity({
-                    ...cartItem,
-                    quantity: cartItem.quantity + 1,
-                  })
-                }
-                disabled={cartItem.quantity === 10 && true}
-              />
-            </div>
-            <div className="cart-product-counter">{cartItem.quantity}</div>
-            <div>
-              <IconButton
                 icon={<AiOutlineMinus />}
                 size={"small"}
                 onClick={() =>
@@ -98,7 +84,21 @@ const CartProduct = ({ cartItem, isLast }) => {
                     quantity: cartItem.quantity - 1,
                   })
                 }
-                disabled={cartItem.quantity === 1 && true}
+                disabled={cartItem.quantity === 1}
+              />
+            </div>
+
+            <div className="cart-product-counter">{cartItem.quantity}</div>
+            <div>
+              <IconButton
+                icon={<AiOutlinePlus />}
+                size={"small"}
+                onClick={() =>
+                  handleUpdateItemQuantity({
+                    ...cartItem,
+                    quantity: cartItem.quantity + 1,
+                  })
+                }
               />
             </div>
           </div>

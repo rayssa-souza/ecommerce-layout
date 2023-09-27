@@ -1,0 +1,34 @@
+@use "../../assets/styles/breakpoints.scss";
+
+@use "../../assets/styles/colors.scss";
+
+@use "../../assets/styles/typography.scss";
+
+.floating-cart {
+  height: 100vh;
+  font-weight: typography.$font-weight-text;
+  font-family: typography.$font-family;
+  font-size: typography.$font-size-default;
+  .floating-cart-product {
+    height: 67vh;
+    margin-top: 20px;
+    overflow-y: scroll;
+  }
+}
+.floating-cart-total {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  > div {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.floating-cart-total-and-button {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}

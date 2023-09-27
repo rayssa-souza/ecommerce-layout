@@ -10,17 +10,15 @@ import { useState } from "react";
 import { useContext } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import "./style.scss";
-import Cart from "../../pages/cart";
+
 const AddToCartButton = ({ product }) => {
-  const { dispatch } = useContext(EcommerceContext);
+  const { state, dispatch } = useContext(EcommerceContext);
 
   const { isDesktop } = useMediaQuery();
   const [count, setCount] = useState(1);
 
   const handleCounterPlus = () => {
-    if (count < 10) {
-      setCount(count + 1);
-    }
+    setCount(count + 1);
   };
   localStorage.clear();
 
@@ -42,6 +40,7 @@ const AddToCartButton = ({ product }) => {
             icon={<AiOutlineMinus />}
             size={"medium"}
             onClick={handleCounterMinus}
+            disabled={count === 1}
           />
         </div>
         <div className="add-to-cart-button-counter">{count}</div>

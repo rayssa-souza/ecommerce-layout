@@ -17,7 +17,6 @@ const Button = ({
         [`button-${color}-color`]: true,
         [`button-size-${size}`]: true,
         "button-disabled": disabled,
-        "button-cursor-pointer": onClick,
       })}
       onClick={disabled ? undefined : onClick}
       disabled={disabled}

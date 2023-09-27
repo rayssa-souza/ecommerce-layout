@@ -35,12 +35,37 @@
       }
     }
   }
+  .cart-floating-overlay {
+    width: 70%;
+    height: 100vh;
+    background-color: colors.$gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .header-floating-cart {
+    position: relative;
+    width: 30%;
+    padding: 35px 25px 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: colors.$white;
+    .header-floating-cart-close-button {
+      position: absolute;
+      top: 35px;
+      right: 25px;
+    }
+  }
   .header-menu-mobile {
     width: 100%;
     padding: 15px;
     position: absolute;
     top: 32px;
-    background-color: white;
+    background-color: colors.$white;
     z-index: 2;
   }
 

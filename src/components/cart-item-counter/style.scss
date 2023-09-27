@@ -1,0 +1,26 @@
+@use "../../assets/styles/breakpoints.scss";
+@use "../../assets/styles/colors.scss";
+@use "../../assets/styles/typography.scss";
+
+.cart-icon-counter {
+  position: relative;
+  .cart-icon-counter-circle {
+    width: 13px;
+    height: 13px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: colors.$red;
+    color: colors.$white;
+    position: absolute;
+    bottom: 2px;
+    left: 12px;
+
+    div {
+      font-size: typography.$font-size-extra-small;
+    }
+  }
+}

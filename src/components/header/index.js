@@ -19,9 +19,12 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import clsx from "clsx";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import CartIconCounter from "../cart-item-counter";
+import FloatingCart from "../floater-cart";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isFloatingCartOpen, setFloatingCartOpen] = useState(false);
   const { pathname } = useLocation();
   const { isMobile, isDesktop, isTablet } = useMediaQuery();
 
@@ -30,11 +33,16 @@ const Header = () => {
     toggleBody();
   };
 
+  const handleFloatingCart = () => {
+    setFloatingCartOpen(!isFloatingCartOpen);
+    toggleBody();
+  };
+
   useEffect(() => {
     setIsMenuOpen(false);
+    setFloatingCartOpen(false);
   }, [pathname]);
 
-  const handleOpenFavorites = () => {};
   return (
     <header className="header">
       <Container>
@@ -69,12 +77,26 @@ const Header = () => {
               >
                 <IconButton icon={<AiFillHeart />} size={"medium"} />
               </Link>
-              <Link
-                to={headerActions.cart.url}
-                title={headerActions.cart.title}
-              >
-                <IconButton icon={<AiFillShopping />} size={"medium"} />
-              </Link>
+              {isDesktop && (
+                <IconButton
+                  icon={<AiFillShopping />}
+                  size={"medium"}
+                  onClick={handleFloatingCart}
+                >
+                  <CartIconCounter />
+                </IconButton>
+              )}
+              {(isMobile || isTablet) && (
+                <Link to={"/cart"} title={"proceed to checkout"}>
+                  <IconButton
+                    icon={<AiFillShopping />}
+                    size={"medium"}
+                    onClick={handleFloatingCart}
+                  >
+                    <CartIconCounter />
+                  </IconButton>
+                </Link>
+              )}
             </div>
             {(isMobile || isTablet) && (
               <IconButton
@@ -95,6 +117,24 @@ const Header = () => {
             </ul>
           </nav>
           <div className="overlay" onClick={handleMenu}></div>
+        </>
+      )}
+      {isDesktop && isFloatingCartOpen && (
+        <>
+          <div className="header-floating-cart">
+            <div className="header-floating-cart-close-button">
+              <IconButton
+                icon={<AiOutlineClose />}
+                size={"medium"}
+                onClick={handleFloatingCart}
+              />
+            </div>
+            <FloatingCart />
+          </div>
+          <div
+            className="cart-floating-overlay"
+            onClick={handleFloatingCart}
+          ></div>
         </>
       )}
     </header>
