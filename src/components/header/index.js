@@ -25,12 +25,12 @@ import FloatingCart from "../floater-cart";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isFloatingCartOpen, setFloatingCartOpen] = useState(false);
+
   const { pathname } = useLocation();
   const { isMobile, isDesktop, isTablet } = useMediaQuery();
 
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    toggleBody();
   };
 
   const handleFloatingCart = () => {
@@ -119,23 +119,9 @@ const Header = () => {
           <div className="overlay" onClick={handleMenu}></div>
         </>
       )}
+
       {isDesktop && isFloatingCartOpen && (
-        <>
-          <div className="header-floating-cart">
-            <div className="header-floating-cart-close-button">
-              <IconButton
-                icon={<AiOutlineClose />}
-                size={"medium"}
-                onClick={handleFloatingCart}
-              />
-            </div>
-            <FloatingCart />
-          </div>
-          <div
-            className="cart-floating-overlay"
-            onClick={handleFloatingCart}
-          ></div>
-        </>
+        <FloatingCart onClose={handleFloatingCart} />
       )}
     </header>
   );

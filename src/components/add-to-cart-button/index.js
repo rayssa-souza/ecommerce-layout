@@ -11,8 +11,8 @@ import { useContext } from "react";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 import "./style.scss";
 
-const AddToCartButton = ({ product }) => {
-  const { state, dispatch } = useContext(EcommerceContext);
+const AddToCartButton = ({ product, onClick }) => {
+  const { dispatch } = useContext(EcommerceContext);
 
   const { isDesktop } = useMediaQuery();
   const [count, setCount] = useState(1);
@@ -30,6 +30,7 @@ const AddToCartButton = ({ product }) => {
 
   const handleAddToCart = () => {
     dispatch(actionCreators.addToCart({ ...product, quantity: count }));
+    if (onClick) onClick();
   };
 
   return (

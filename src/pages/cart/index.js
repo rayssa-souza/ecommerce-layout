@@ -8,6 +8,8 @@ import Button from "../../components/button";
 import { useMemo } from "react";
 import { EcommerceContext } from "../../contexts/ecommerce-context";
 import { useContext } from "react";
+import { FaCartArrowDown } from "react-icons/fa6";
+
 import "./style.scss";
 
 const Cart = () => {
@@ -30,9 +32,19 @@ const Cart = () => {
         <span className="cart-span">Shopping Cart</span>
         <div className="cart-wrapper">
           <GridContainer>
+            {state.cart.length === 0 && (
+              <div className="cart-empty-wrapper">
+                <div className="cart-empty">
+                  <div className="cart-empty-icon">
+                    <FaCartArrowDown />
+                  </div>
+                  <span>Your cart is empty!</span>
+                </div>
+              </div>
+            )}
             {state.cart.map((cartItem, index) => {
               return (
-                <GridItem xs={"100%"} sm={"100%"} lg={"60%"} key={cartItem.id}>
+                <GridItem xs={"100%"} sm={"60%"} lg={"60%"} key={cartItem.id}>
                   <CartProduct
                     cartItem={cartItem}
                     isLast={index === state.cart.length - 1}
@@ -70,7 +82,7 @@ const Cart = () => {
                 </div>
               </div>
             </div>
-            <Button disabled={true} />
+            <Button disabled={true} text={"CHECKOUT"} />
           </div>
         </div>
       </Container>

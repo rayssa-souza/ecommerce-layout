@@ -47,23 +47,19 @@ const CartProduct = ({ cartItem, isLast }) => {
         "cart-product-no-border": isLast,
       })}
     >
-      <Link
-        className="cart-product-image-link"
-        to={`/p/${cartItem.id}`}
-        title={cartItem.title}
-      >
-        <div className="cart-product-image-wrapper">
+      <div className="cart-product-image-wrapper">
+        <Link to={`/p/${cartItem.id}`} title={cartItem.title}>
           <img src={cartItem.image[0]} alt={cartItem.title} />
-          <div className="cart-product-favorite">
-            <IconButton
-              icon={isFavorite ? <AiFillHeart /> : <AiOutlineHeart />}
-              color={isFavorite ? "red" : undefined}
-              size={"medium"}
-              onClick={handleFavoriteByCart}
-            />
-          </div>
+        </Link>
+        <div className="cart-product-favorite">
+          <IconButton
+            icon={isFavorite ? <AiFillHeart /> : <AiOutlineHeart />}
+            color={isFavorite ? "red" : undefined}
+            size={"medium"}
+            onClick={handleFavoriteByCart}
+          />
         </div>
-      </Link>
+      </div>
 
       <div className="cart-product-wrapper">
         <div className="cart-product-title-and-price">

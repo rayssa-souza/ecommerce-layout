@@ -5,30 +5,68 @@
 @use "../../assets/styles/typography.scss";
 
 .floating-cart {
-  height: 100vh;
-  font-weight: typography.$font-weight-text;
   font-family: typography.$font-family;
   font-size: typography.$font-size-default;
-  .floating-cart-product {
-    height: 67vh;
-    margin-top: 20px;
-    overflow-y: scroll;
+  span {
+    font-weight: typography.$font-weight-text;
   }
-}
-.floating-cart-total {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  > div {
-    width: 60px;
-    display: flex;
-    justify-content: space-between;
+  .floating-cart-wrapper {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    .floating-cart-overlay {
+      height: 100vh;
+      background-color: colors.$gray;
+      opacity: 0.5;
+    }
+    .floating-cart-content {
+      display: flex;
+      flex-direction: column;
+      padding: 40px 20px 0;
+      background-color: colors.$white;
+      height: 100vh;
+      .floating-cart-topper {
+        display: flex;
+        justify-content: space-between;
+      }
+      .floating-cart-product {
+        padding-top: 30px;
+        height: 67vh;
+        overflow-y: scroll;
+        .floating-cart-empty {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          color: colors.$gray;
+          font-size: typography.$font-size-default;
+
+          .floating-cart-empty-icon-span {
+            font-size: typography.$font-size-extra-large-2;
+            margin-bottom: 20px;
+          }
+        }
+      }
+      .floating-cart-total {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        > div {
+          width: 60px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+      .floating-cart-total-and-button {
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
   }
-}
-.floating-cart-total-and-button {
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }

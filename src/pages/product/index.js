@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
 
 import productDetails from "../../utils/productDetails.json";
 import Container from "../../components/container";
@@ -8,6 +9,7 @@ import GridItem from "../../components/grid-item";
 import ProductDetailSlider from "../../components/product-detail-slider";
 import BreadCrumb from "../../components/bread-crumb";
 import Section from "../../components/section";
+
 import "./style.scss";
 import AccordionInfo from "../../components/accordion-info";
 import TabInfo from "../../components/tab-info";
@@ -16,15 +18,26 @@ import BestSellersProducts from "../../components/best-sellers-products";
 import PopularProducts from "../../components/popular-products";
 import Ratings from "../../components/rating";
 import AddToCartButton from "../../components/add-to-cart-button";
+import FloatingCart from "../../components/floater-cart";
+import toggleBody from "../../utils/toggleBody";
 
 const Product = () => {
   const { productId } = useParams();
   const { isMobile, isTablet, isDesktop } = useMediaQuery();
+  const [isFloatingCartOpen, setFloatingCartOpen] = useState(false);
 
   const productInfo = productDetails[productId];
 
+  const handleFloatingCart = () => {
+    setFloatingCartOpen(!isFloatingCartOpen);
+    toggleBody();
+  };
+
   return (
     <div className="product-page">
+      {isDesktop && isFloatingCartOpen && (
+        <FloatingCart onClose={handleFloatingCart} />
+      )}
       <Container>
         {productInfo.subcategory ? (
           <BreadCrumb
@@ -64,7 +77,12 @@ const Product = () => {
                   );
                 })}
               </div>
-              {isDesktop && <AddToCartButton product={productInfo} />}
+              {isDesktop && (
+                <AddToCartButton
+                  product={productInfo}
+                  onClick={handleFloatingCart}
+                />
+              )}
               {(isMobile || isTablet) && (
                 <>
                   <AccordionInfo
