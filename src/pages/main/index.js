@@ -2,7 +2,6 @@ import React from "react";
 import "./style.scss";
 import Section from "../../components/section";
 import Container from "../../components/container";
-
 import BestSellersProducts from "../../components/best-sellers-products";
 import PopularProducts from "../../components/popular-products";
 import Sliders from "../../components/slider-carrousel";
