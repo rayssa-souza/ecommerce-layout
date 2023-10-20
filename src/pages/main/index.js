@@ -22,6 +22,7 @@ const Main = () => {
             autoplay: true,
             speed: 500,
             pauseOnHover: true,
+            arrows: false,
           }}
         >
           <img

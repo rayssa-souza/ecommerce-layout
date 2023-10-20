@@ -69,7 +69,6 @@ export default function reducer(state = intitialState, { type, payload }) {
         ),
       };
     case actionTypes.UPDATE_CART_ITEM_QUANTITY:
-      console.log({ type, payload });
       return {
         ...state,
         cart: state.cart.map((item) => {

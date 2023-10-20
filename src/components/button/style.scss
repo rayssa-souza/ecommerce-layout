@@ -12,8 +12,8 @@
   cursor: pointer;
 
   &.button-size-small {
-    width: 200px;
     font-size: typography.$font-size-small-2;
+    width: 50%;
   }
   &.button-black-color {
     background-color: colors.$black;

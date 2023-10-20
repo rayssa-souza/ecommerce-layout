@@ -19,6 +19,7 @@ const BestSellersProducts = ({ children }) => {
           slidesToScroll: 1,
           autoplay: true,
           pauseOnHover: true,
+          arrows: false,
 
           responsive: [
             {

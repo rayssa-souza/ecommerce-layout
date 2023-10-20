@@ -53,15 +53,13 @@ const AddToCartButton = ({ product, onClick }) => {
           />
         </div>
       </div>
+      <Button text={"ADD TO BASKET"} size={"small"} onClick={handleAddToCart} />
       {isDesktop && (
         <Button
           text={"ADD TO BASKET"}
           size={"large"}
           onClick={handleAddToCart}
         />
-      )}
-      {!isDesktop && (
-        <Button text={"ADD TO BASKET"} onClick={handleAddToCart} />
       )}
     </div>
   );

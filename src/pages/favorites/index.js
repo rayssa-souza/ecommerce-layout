@@ -1,16 +1,13 @@
 import React from "react";
 import { useContext } from "react";
-import {
-  EcommerceContext,
-  actionCreators,
-} from "../../contexts/ecommerce-context";
+import { EcommerceContext } from "../../contexts/ecommerce-context";
 import Container from "../../components/container";
 import GridContainer from "../../components/grid-container";
 import GridItem from "../../components/grid-item";
 import ProductItem from "../../components/product-item";
 import "./style.scss";
 import BreadCrumb from "../../components/bread-crumb";
-
+import { AiFillHeart } from "react-icons/ai";
 const Favorites = () => {
   const { state } = useContext(EcommerceContext);
 
@@ -34,6 +31,16 @@ const Favorites = () => {
             );
           })}
         </GridContainer>
+        {state.favorites.length === 0 && (
+          <div className="favorites-empty">
+            <div className="favorites-empty-wrapper">
+              <div className="favorites-empty-icon">
+                <AiFillHeart />
+              </div>
+              <span>Pick your favorite ones!</span>
+            </div>
+          </div>
+        )}
       </Container>
     </div>
   );
