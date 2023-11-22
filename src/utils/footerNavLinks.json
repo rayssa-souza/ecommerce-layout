@@ -6,26 +6,26 @@
       "id": "1abc"
     },
     {
-      "title": { "text": "ABOUT US", "url": null },
+      "title": { "text": "ABOUT US", "url": "" },
       "sublinks": [],
       "id": "2abc"
     },
 
     {
-      "title": { "text": "CATALOG", "url": null },
+      "title": { "text": "CATALOG", "url": "" },
       "sublinks": [
-        { "text": "Skincare", "url": "/shop/skin-care", "id": 1 },
-        { "text": "Hair & body", "url": "/shop/hair-and-body", "id": 2 },
-        { "text": "Best Sellers", "url": "/shop/best-sellers", "id": 3 }
+        { "text": "Skincare", "url": "/shop/skin-care", "id": "1" },
+        { "text": "Hair & body", "url": "/shop/hair-and-body", "id": "2" },
+        { "text": "Best Sellers", "url": "/shop/best-sellers", "id": "3" }
       ],
       "id": "3abc"
     },
     {
-      "title": { "text": "CUSTOMER CARE", "url": null },
+      "title": { "text": "CUSTOMER CARE", "url": "" },
       "sublinks": [
-        { "text": "FAQ", "url": null, "id": 4 },
-        { "text": "Disposal Instructions", "url": null, "id": 5 },
-        { "text": "Return Policy", "url": null, "id": 6 }
+        { "text": "FAQ", "url": "", "id": "4" },
+        { "text": "Disposal Instructions", "url": "", "id": "5" },
+        { "text": "Return Policy", "url": "", "id": "6" }
       ],
       "id": "4abc"
     }
