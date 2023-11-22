@@ -4,6 +4,7 @@ Live Demo: https://64dd29b51d046d072107dd5a--sprightly-tartufo-8748f3.netlify.ap
 
 # Tech Stack
 
+- Typescript
 - React.js
 - React Router
 - React Icons
