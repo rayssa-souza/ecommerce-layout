@@ -1,6 +1,6 @@
 # Ecommerce Layout
 
-Live Demo: https://64dd29b51d046d072107dd5a--sprightly-tartufo-8748f3.netlify.app/
+Live Demo: https://655e369f2a036253beb1d545--sprightly-tartufo-8748f3.netlify.app/
 
 # Tech Stack
 
